@@ -79,6 +79,9 @@ section:nth-of-type(4) {
   justify-content: space-between;
   padding: 4em 0;
 }
+.what-we-do .content-what-we-do > img {
+  display: none;
+}
 .know-about-us .about-us,
 .what-we-do .content-what-we-do {
   max-width: 600px;
@@ -172,11 +175,15 @@ section:nth-of-type(3) {
 }
 /*******************************************************************media query***************************************************/
 @media only screen and (max-width: 600px) {
+  section:nth-of-type(2),
+  section:nth-of-type(4) {
+    padding: 0 3em;
+  }
   section:nth-of-type(1) {
     background-size: auto;
   }
   .inclusive-cares {
-    padding: 4em 4em 1em 4em;
+    padding: 4em 2em 1em 2em;
     text-align: center;
   }
   .inclusive-cares > h1 {
@@ -201,7 +208,8 @@ section:nth-of-type(3) {
   .inclusive-cares .content span {
     width: 11%;
   }
-  .know-about-us {
+  .know-about-us,
+  .what-we-do {
     padding: 3em 0;
     flex-direction: column;
     gap: 2em 0;
@@ -209,18 +217,23 @@ section:nth-of-type(3) {
   .know-about-us .about-us {
     max-width: inherit;
   }
-  .know-about-us .about-us .content-about {
+  .know-about-us .about-us .content-about,
+  .what-we-do .content-what-we-do .content-about {
     padding-bottom: 0;
   }
-  .know-about-us .about-us h1 {
+  .know-about-us .about-us h1,
+  .what-we-do .content-what-we-do h1 {
     font-size: 23px;
     line-height: 30px;
   }
-  .know-about-us .about-us p {
+  .know-about-us .about-us p,
+  .what-we-do .content-what-we-do p {
     font-size: 14px;
     max-width: inherit;
   }
-  .know-about-us img {
+  .know-about-us img,
+  .what-we-do .content-what-we-do > img {
+    display: inherit;
     width: 100%;
   }
   .our-supporters > h2 {
@@ -231,9 +244,24 @@ section:nth-of-type(3) {
     padding: 1.3em 0 0 0;
     overflow-x: scroll;
     gap: 0 2em;
-    width: 120%;
+    width: 105%;
+  }
+  .what-we-do > img {
+    display: none;
   }
   .our-supporters .groups-img img {
     width: 125px;
+  }
+  .what-we-do .content-what-we-do .container-box {
+    padding-top: 2em;
+  }
+  .what-we-do .content-what-we-do .container-box .box {
+    max-width: inherit;
+  }
+  .what-we-do .content-what-we-do .container-box .box img {
+    width: 30px;
+  }
+  .what-we-do .content-what-we-do .container-box .box .para p {
+    font-size: 14px;
   }
 }
