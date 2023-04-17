@@ -1,0 +1,135 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--Bg-color);
+  padding: 1em 4em;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo > h1 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.09em;
+  color: #4c2a5b;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+.navbar .logo > h1 span {
+  color: #dc8b42;
+}
+.navbar .menu-bar .nav-links {
+  display: flex;
+  align-items: center;
+  column-gap: 2em;
+  font-family: "Nunito Sans", sans-serif;
+}
+.navbar .menu-bar .nav-links li > a {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--Text-color);
+  text-transform: capitalize;
+  letter-spacing: 0.04em;
+}
+.navbar .menu-bar .nav-links li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: var(--Active-color);
+  width: 0;
+  height: 4px;
+  bottom: -5px;
+  transition: 0.2s ease-in;
+}
+.navbar .menu-bar .nav-links li > a:hover:after {
+  width: 100%;
+}
+.navbar .menu-bar .nav-links li > a:hover {
+  color: var(--Active-color);
+}
+.btn button {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  padding: 10px 17px;
+  background: var(--Primary-color);
+  color: var(--white);
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn button:hover {
+  background: var(--Active-color);
+}
+#toggele {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#toggele::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 4px;
+  transform: translateY(-12px);
+  box-shadow: 0 12px var(--black);
+  background: var(--black);
+}
+#toggele::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 4px;
+  transform: translateY(12px);
+  background: var(--black);
+}
+/***************************************************************media query***********************************************************/
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 0 1em;
+  }
+  .navbar .logo > h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  #toggele {
+    display: inherit;
+  }
+  #toggele.open::before {
+    transform: translateY(0) rotate(45deg);
+    box-shadow: 0 0;
+  }
+
+  #toggele.open::after {
+    transform: translateY(0) rotate(-45deg);
+  }
+  .navbar .btn {
+    display: none;
+  }
+  .navbar .menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: var(--Bg-color);
+  }
+  .navbar .menu-bar .nav-links {
+    display: block;
+  }
+  .navbar .menu-bar .nav-links li {
+    padding-bottom: 2em;
+  }
+  .navbar .menu-bar.open {
+    display: inherit;
+  }
+}
