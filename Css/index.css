@@ -89,7 +89,7 @@ section:nth-of-type(2) {
 }
 .know-about-us .about-us .content-about span {
   background: var(--Title-color);
-  width: 5%;
+  width: 10%;
   height: 3px;
 }
 .know-about-us .about-us .content-about > p {
@@ -149,5 +149,27 @@ section:nth-of-type(2) {
   }
   .inclusive-cares .content span {
     width: 11%;
+  }
+  .know-about-us {
+    padding: 3em 0;
+    flex-direction: column;
+    gap: 2em 0;
+  }
+  .know-about-us .about-us {
+    max-width: inherit;
+  }
+  .know-about-us .about-us .content-about {
+    padding-bottom: 0;
+  }
+  .know-about-us .about-us h1 {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .know-about-us .about-us p {
+    font-size: 14px;
+    max-width: inherit;
+  }
+  .know-about-us img {
+    width: 100%;
   }
 }
