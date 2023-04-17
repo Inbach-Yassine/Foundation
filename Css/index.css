@@ -67,37 +67,44 @@ section:nth-of-type(1) {
   height: 2px;
   background: var(--Bg-color-alt);
 }
-section:nth-of-type(2) {
+section:nth-of-type(2),
+section:nth-of-type(4) {
   padding: 0 4.5em;
   background: var(--Bg-color);
 }
-.know-about-us {
+.know-about-us,
+.what-we-do {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 4em 0;
 }
-.know-about-us .about-us {
+.know-about-us .about-us,
+.what-we-do .content-what-we-do {
   max-width: 600px;
   font-family: "Nunito Sans", sans-serif;
 }
-.know-about-us .about-us .content-about {
+.know-about-us .about-us .content-about,
+.what-we-do .content-what-we-do .content-about {
   display: flex;
   align-items: baseline;
   column-gap: 13px;
   padding-bottom: 15px;
 }
-.know-about-us .about-us .content-about span {
+.know-about-us .about-us .content-about span,
+.what-we-do .content-what-we-do .content-about span {
   background: var(--Title-color);
   width: 10%;
   height: 3px;
 }
-.know-about-us .about-us .content-about > p {
-  font-size: 15px;
+.know-about-us .about-us .content-about > p,
+.what-we-do .content-what-we-do .content-about p {
+  font-size: 20px;
   font-weight: 700;
   color: var(--Title-color);
 }
-.know-about-us .about-us h1 {
+.know-about-us .about-us h1,
+.what-we-do .content-what-we-do h1 {
   font-size: 33px;
   font-weight: 700;
   color: var(--Title-color);
@@ -105,7 +112,8 @@ section:nth-of-type(2) {
   line-height: 35px;
   padding-bottom: 20px;
 }
-.know-about-us .about-us p {
+.know-about-us .about-us p,
+.what-we-do .content-what-we-do p {
   font-size: 16px;
   font-weight: 400;
   color: var(--Text-color);
@@ -136,6 +144,31 @@ section:nth-of-type(3) {
   align-items: center;
   justify-content: space-between;
   padding: 2em 0 0 0;
+}
+.what-we-do .content-what-we-do .container-box .box {
+  display: flex;
+  align-items: start;
+  column-gap: 15px;
+  max-width: 400px;
+}
+.what-we-do .content-what-we-do .container-box .box img {
+  width: 35px;
+}
+.what-we-do .content-what-we-do .container-box .box .para {
+  font-family: "Roboto", sans-serif;
+}
+.what-we-do .content-what-we-do .container-box .box .para h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--title-color);
+  padding-bottom: 7px;
+  letter-spacing: 0.02em;
+}
+.what-we-do .content-what-we-do .container-box .box .para p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--Text-color);
+  line-height: 23px;
 }
 /*******************************************************************media query***************************************************/
 @media only screen and (max-width: 600px) {
