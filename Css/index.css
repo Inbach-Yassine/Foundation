@@ -28,7 +28,7 @@ section:nth-of-type(1) {
   margin: 5em 0 0 0;
 }
 .inclusive-cares {
-  padding: 6em 5.5em 1em 5.5em;
+  padding: 6em 4.5em 1em 4.5em;
 }
 .inclusive-cares > h1 {
   font-size: 35px;
@@ -67,134 +67,57 @@ section:nth-of-type(1) {
   height: 2px;
   background: var(--Bg-color-alt);
 }
-.Know-about-us {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.Know-about-us .about-us .content-about {
-  display: flex;
-  align-items: center;
-}
-.Know-about-us .about-us .content-about span {
-  background: var(--black);
-  width: 5%;
-  height: 3px;
-}
-/*******************************************************************media query***************************************************/
-@media only screen and (max-width: 600px) {
-  section:nth-of-type(1) {
-    background-size: auto;
-  }
-  .inclusive-cares {
-    padding: 4em 4em 1em 4em;
-    text-align: center;
-  }
-  .inclusive-cares > h1 {
-    font-size: 23px;
-    line-height: 30px;
-    padding-bottom: 25px;
-    max-width: inherit;
-  }
-  .btn button {
-    padding: 9px 15px;
-    font-size: 13px;
-  }
-  .inclusive-cares .content {
-    justify-content: center;
-    flex-direction: column;
-    gap: 1em 0;
-    padding: 3em 0 1em 0;
-  }
-  .inclusive-cares .content > p {
-    font-size: 15px;
-  }
-  .inclusive-cares .content span {
-    width: 11%;
-  }
-}
-@import "./reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
-@import "./navbar.css";
-:root {
-  --Primary-color: #096a56;
-  --Active-color: #205053;
-  --Bg-color: #e8ebf0;
-  --Text-color: #374151;
-  --Title-color: #22495f;
-  --Bg-color-alt: #e7f2f7;
-  --black: #000000;
-  --white: #ffffff;
-}
-*::selection {
-  background: var(--black);
-  color: var(--white);
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-}
-section:nth-of-type(1) {
-  background-repeat: round;
-  margin: 5em 0 0 0;
-}
-.inclusive-cares {
-  padding: 6em 5.5em 1em 5.5em;
-}
-.inclusive-cares > h1 {
-  font-size: 35px;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  line-height: 43px;
-  padding-bottom: 30px;
-  max-width: 450px;
-  color: var(--white);
-}
-.inclusive-cares .btn button {
+section:nth-of-type(2) {
+  padding: 0 4.5em;
   background: var(--Bg-color);
-  color: var(--Text-color);
-  border-radius: 0;
-}
-.inclusive-cares .btn button:hover {
-  background: var(--Active-color);
-  color: var(--white);
-}
-.inclusive-cares .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5em 0 3em 0;
-}
-.inclusive-cares .content > p {
-  font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--Bg-color);
-}
-.inclusive-cares .content span {
-  width: 45%;
-  height: 2px;
-  background: var(--Bg-color-alt);
 }
 .know-about-us {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 4em 0;
+}
+.know-about-us .about-us {
+  max-width: 600px;
+  font-family: "Nunito Sans", sans-serif;
 }
 .know-about-us .about-us .content-about {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  column-gap: 13px;
+  padding-bottom: 15px;
 }
 .know-about-us .about-us .content-about span {
-  background: var(--black);
+  background: var(--Title-color);
   width: 5%;
   height: 3px;
+}
+.know-about-us .about-us .content-about > p {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--Title-color);
+}
+.know-about-us .about-us h1 {
+  font-size: 33px;
+  font-weight: 700;
+  color: var(--Title-color);
+  letter-spacing: 0.07em;
+  line-height: 35px;
+  padding-bottom: 20px;
+}
+.know-about-us .about-us p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--Text-color);
+  max-width: 570px;
+  padding-bottom: 20px;
+}
+.know-about-us .about-us .btn button {
+  border-radius: 0;
+}
+.know-about-us img {
+  width: 300px;
+  object-fit: cover;
 }
 /*******************************************************************media query***************************************************/
 @media only screen and (max-width: 600px) {
