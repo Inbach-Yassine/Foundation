@@ -68,7 +68,8 @@ section:nth-of-type(1) {
   background: var(--Bg-color-alt);
 }
 section:nth-of-type(2),
-section:nth-of-type(4) {
+section:nth-of-type(4),
+section:nth-of-type(5) {
   padding: 0 4.5em;
   background: var(--Bg-color);
 }
@@ -83,31 +84,36 @@ section:nth-of-type(4) {
   display: none;
 }
 .know-about-us .about-us,
-.what-we-do .content-what-we-do {
+.what-we-do .content-what-we-do,
+.container-project {
   max-width: 600px;
   font-family: "Nunito Sans", sans-serif;
 }
 .know-about-us .about-us .content-about,
-.what-we-do .content-what-we-do .content-about {
+.what-we-do .content-what-we-do .content-about,
+.container-project .content-about {
   display: flex;
   align-items: baseline;
   column-gap: 13px;
   padding-bottom: 15px;
 }
 .know-about-us .about-us .content-about span,
-.what-we-do .content-what-we-do .content-about span {
+.what-we-do .content-what-we-do .content-about span,
+.container-project .content-about span {
   background: var(--Title-color);
   width: 10%;
   height: 3px;
 }
 .know-about-us .about-us .content-about > p,
-.what-we-do .content-what-we-do .content-about p {
+.what-we-do .content-what-we-do .content-about p,
+.container-project .content-about p {
   font-size: 20px;
   font-weight: 700;
   color: var(--Title-color);
 }
 .know-about-us .about-us h1,
-.what-we-do .content-what-we-do h1 {
+.what-we-do .content-what-we-do h1,
+.container-project > h1 {
   font-size: 33px;
   font-weight: 700;
   color: var(--Title-color);
@@ -173,10 +179,78 @@ section:nth-of-type(3) {
   color: var(--Text-color);
   line-height: 23px;
 }
+.container-project {
+  padding: 5em 0 0 0;
+}
+.container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 5em;
+  padding: 1em 0 0 0;
+  flex-wrap: wrap;
+}
+.container-img .group {
+  position: relative;
+  width: 300px;
+  height: 330px;
+  display: flex;
+  align-items: flex-end;
+}
+.container-img .group::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s all;
+  opacity: 0;
+}
+.container-img .group:hover:before {
+  opacity: 1;
+}
+.container-img .group img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.container-img .group .group-content {
+  position: relative;
+  opacity: 0;
+  transition: 0.5s all;
+  font-family: "Roboto", sans-serif;
+  color: var(--white);
+  padding: 20px 0 20px 20px;
+}
+.container-img .group:hover .group-content {
+  opacity: 1;
+}
+.container-img .group .group-content h4 {
+  font-size: 21px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.container-img .group .group-content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  padding-bottom: 15px;
+}
+.container-img .group .group-content .btn button {
+  padding: 10px 15px;
+  background: var(--Bg-color-alt);
+  color: var(--Primary-color);
+  font-size: 15px;
+  border-radius: 0;
+}
+
 /*******************************************************************media query***************************************************/
 @media only screen and (max-width: 600px) {
   section:nth-of-type(2),
-  section:nth-of-type(4) {
+  section:nth-of-type(4),
+  section:nth-of-type(5) {
     padding: 0 3em;
   }
   section:nth-of-type(1) {
@@ -222,8 +296,9 @@ section:nth-of-type(3) {
     padding-bottom: 0;
   }
   .know-about-us .about-us h1,
-  .what-we-do .content-what-we-do h1 {
-    font-size: 23px;
+  .what-we-do .content-what-we-do h1,
+  .container-project h1 {
+    font-size: 21px;
     line-height: 30px;
   }
   .know-about-us .about-us p,
@@ -242,9 +317,10 @@ section:nth-of-type(3) {
   }
   .our-supporters .groups-img {
     padding: 1.3em 0 0 0;
-    overflow-x: scroll;
     gap: 0 2em;
-    width: 105%;
+    width: 110%;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
   }
   .what-we-do > img {
     display: none;
@@ -262,6 +338,24 @@ section:nth-of-type(3) {
     width: 30px;
   }
   .what-we-do .content-what-we-do .container-box .box .para p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .container-img {
+    gap: 2em 0;
+    flex-wrap: wrap;
+  }
+  .container-img .group {
+    width: 270px;
+    height: 280px;
+    width: 100%;
+  }
+  .container-img .group .group-content .btn button {
+    padding: 8px 12px;
     font-size: 14px;
+  }
+  .container-img .group .group-content p {
+    font-size: 13px;
+    max-width: 290px;
   }
 }
