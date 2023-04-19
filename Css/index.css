@@ -322,7 +322,8 @@ section:nth-of-type(3) {
 @media only screen and (max-width: 600px) {
   section:nth-of-type(2),
   section:nth-of-type(4),
-  section:nth-of-type(5) {
+  section:nth-of-type(5),
+  section:nth-of-type(6) {
     padding: 0 3em;
   }
   section:nth-of-type(1) {
@@ -369,12 +370,14 @@ section:nth-of-type(3) {
   }
   .know-about-us .about-us h1,
   .what-we-do .content-what-we-do h1,
-  .container-project h1 {
+  .container-project h1,
+  .speed-your-donations .speed-your-donations-group h1 {
     font-size: 21px;
     line-height: 30px;
   }
   .know-about-us .about-us p,
-  .what-we-do .content-what-we-do p {
+  .what-we-do .content-what-we-do p,
+  .speed-your-donations .speed-your-donations-group p {
     font-size: 14px;
     max-width: inherit;
   }
@@ -429,5 +432,15 @@ section:nth-of-type(3) {
   .container-img .group .group-content p {
     font-size: 13px;
     max-width: 290px;
+  }
+  .speed-your-donations {
+    flex-direction: column;
+    gap: 1em 0;
+    padding: 2em 0;
+  }
+  .speed-your-donations .img h3 {
+    top: 115px;
+    left: 79px;
+    font-size: 16px;
   }
 }
