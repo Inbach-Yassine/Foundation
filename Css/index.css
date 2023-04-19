@@ -1,5 +1,5 @@
 @import "./reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:wght@300;400;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
 @import "./navbar.css";
 :root {
   --Primary-color: #096a56;
@@ -69,7 +69,8 @@ section:nth-of-type(1) {
 }
 section:nth-of-type(2),
 section:nth-of-type(4),
-section:nth-of-type(5) {
+section:nth-of-type(5),
+section:nth-of-type(6) {
   padding: 0 4.5em;
   background: var(--Bg-color);
 }
@@ -85,7 +86,8 @@ section:nth-of-type(5) {
 }
 .know-about-us .about-us,
 .what-we-do .content-what-we-do,
-.container-project {
+.container-project,
+.speed-your-donations .speed-your-donations-group {
   max-width: 600px;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -113,7 +115,8 @@ section:nth-of-type(5) {
 }
 .know-about-us .about-us h1,
 .what-we-do .content-what-we-do h1,
-.container-project > h1 {
+.container-project > h1,
+.speed-your-donations .speed-your-donations-group h1 {
   font-size: 33px;
   font-weight: 700;
   color: var(--Title-color);
@@ -122,7 +125,8 @@ section:nth-of-type(5) {
   padding-bottom: 20px;
 }
 .know-about-us .about-us p,
-.what-we-do .content-what-we-do p {
+.what-we-do .content-what-we-do p,
+.speed-your-donations .speed-your-donations-group p {
   font-size: 16px;
   font-weight: 400;
   color: var(--Text-color);
@@ -186,7 +190,7 @@ section:nth-of-type(3) {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0 5em;
+  gap: 2em 3em;
   padding: 1em 0 0 0;
   flex-wrap: wrap;
 }
@@ -215,6 +219,7 @@ section:nth-of-type(3) {
   top: 0;
   left: 0;
   object-fit: cover;
+  border-radius: 10px;
 }
 .container-img .group .group-content {
   position: relative;
@@ -245,7 +250,74 @@ section:nth-of-type(3) {
   font-size: 15px;
   border-radius: 0;
 }
-
+.speed-your-donations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4em 0 3em 0;
+}
+.speed-your-donations .speed-your-donations-group .groups {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 1em;
+}
+.speed-your-donations .speed-your-donations-group .groups .para {
+  display: flex;
+  align-items: baseline;
+  column-gap: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.speed-your-donations .speed-your-donations-group .groups .para p {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+.speed-your-donations .speed-your-donations-group .groups .para > span {
+  width: 14px;
+  height: 14px;
+  background: #bef3c0;
+}
+.speed-your-donations
+  .speed-your-donations-group
+  .groups
+  .para:nth-child(2)
+  > span {
+  background: #ac94f1;
+}
+.speed-your-donations
+  .speed-your-donations-group
+  .groups
+  .para:nth-child(3)
+  > span {
+  background: #fff0ca;
+}
+.speed-your-donations
+  .speed-your-donations-group
+  .groups
+  .para:nth-child(4)
+  > span {
+  background: #f9cf64;
+}
+.speed-your-donations
+  .speed-your-donations-group
+  .groups
+  .para:nth-child(5)
+  > span {
+  background: #f38fbf;
+}
+.speed-your-donations .img {
+  position: relative;
+  font-family: "Courgette", cursive;
+}
+.speed-your-donations .img h3 {
+  position: absolute;
+  top: 112px;
+  left: 74px;
+  font-weight: 400;
+  color: var(--white);
+}
 /*******************************************************************media query***************************************************/
 @media only screen and (max-width: 600px) {
   section:nth-of-type(2),
