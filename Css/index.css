@@ -70,8 +70,9 @@ section:nth-of-type(1) {
 section:nth-of-type(2),
 section:nth-of-type(4),
 section:nth-of-type(5),
-section:nth-of-type(6) {
-  padding: 0 4.5em;
+section:nth-of-type(6),
+section:nth-child(9) {
+  padding: 0 3em;
   background: var(--Bg-color);
 }
 .know-about-us,
@@ -93,7 +94,8 @@ section:nth-of-type(6) {
 }
 .know-about-us .about-us .content-about,
 .what-we-do .content-what-we-do .content-about,
-.container-project .content-about {
+.container-project .content-about,
+.our-events .content-about {
   display: flex;
   align-items: baseline;
   column-gap: 13px;
@@ -101,14 +103,16 @@ section:nth-of-type(6) {
 }
 .know-about-us .about-us .content-about span,
 .what-we-do .content-what-we-do .content-about span,
-.container-project .content-about span {
+.container-project .content-about span,
+.our-events .content-about span {
   background: var(--Title-color);
   width: 10%;
   height: 3px;
 }
 .know-about-us .about-us .content-about > p,
 .what-we-do .content-what-we-do .content-about p,
-.container-project .content-about p {
+.container-project .content-about p,
+.our-events .content-about p {
   font-size: 20px;
   font-weight: 700;
   color: var(--Title-color);
@@ -364,16 +368,92 @@ section:nth-of-type(7) {
   background-color: var(--white);
   color: var(--Primary-color);
 }
+.our-events {
+  padding: 2em 0 1em 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+.our-events .content-about span {
+  width: 80%;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding-bottom: 1em;
+  overflow-x: scroll;
+}
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 1em;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  background: var(--Bg-color-alt);
+  padding: 2em 1em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  min-width: 40%;
+}
+.cards::-webkit-scrollbar {
+  height: 5px;
+  background: var(--white);
+}
+.cards::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+.cards .card .date h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--Title-color);
+}
+.cards .card .date p {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--Text-color);
+}
+.cards .card .card-content {
+  text-align: start;
+}
+.cards .card .card-content p:first-child {
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 6px;
+  color: var(--Title-color);
+  letter-spacing: 0.02em;
+}
+.cards .card .card-content p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--Title-color);
+  max-width: 250px;
+}
+.cards .card i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  width: 43px;
+  height: 43px;
+  border-radius: 20px;
+}
 /*******************************************************************media query***************************************************/
 @media only screen and (max-width: 600px) {
   section:nth-of-type(2),
   section:nth-of-type(4),
   section:nth-of-type(5),
-  section:nth-of-type(6) {
-    padding: 0 3em;
+  section:nth-of-type(6),
+  section:nth-of-type(9) {
+    padding: 0 1em;
   }
   section:nth-of-type(1) {
     background-size: auto;
+  }
+  section:nth-of-type(3) {
+    padding: 2em;
+  }
+  section:nth-of-type(7) {
+    padding: 0;
   }
   .inclusive-cares {
     padding: 4em 2em 1em 2em;
@@ -491,5 +571,33 @@ section:nth-of-type(7) {
   }
   .bg-img {
     display: none;
+  }
+  .our-events .content-about span {
+    width: 50%;
+  }
+  .speed-your-donations .speed-your-donations-group .groups .para {
+    flex: auto;
+  }
+  .cards {
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: none;
+  }
+  .cards .card {
+    flex-direction: column;
+    gap: 15px 0;
+    padding: 1em;
+    flex: 1 1 180px;
+  }
+
+  .cards .card .card-content {
+    text-align: center;
+  }
+  .cards .card .date h2 {
+    font-size: 20px;
+  }
+  .cards .card .card-content p:nth-child(2) {
+    font-size: 15px;
+    max-width: 200px;
   }
 }
