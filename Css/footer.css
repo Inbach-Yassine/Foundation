@@ -3,21 +3,21 @@ footer {
   background: var(--black);
 }
 .footer-groups {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   padding: 2em 3em;
 }
-.footer-groups .footer-title {
-  font-family: "Courgette", cursive;
-}
-.footer-groups .footer-title > h1 {
+.footer-groups > h1 {
   font-size: 20px;
+  font-family: "Courgette", cursive;
+  color: var(--white);
   font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--Bg-color);
+  padding-bottom: 1em;
 }
 .footer-groups .footer-menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   font-family: "Nunito Sans", sans-serif;
 }
 .footer-groups .footer-menu .footer-links > h2 {
@@ -53,9 +53,10 @@ footer {
   padding-bottom: 10px;
   color: var(--Bg-color);
 }
-.footer-groups.groups form {
+.footer-groups .groups form {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 1em;
 }
 .footer-groups .groups form input {
   padding: 10px 0;
@@ -64,15 +65,14 @@ footer {
   color: var(--black);
   font-weight: 400;
   background: var(--white);
-  width: 60%;
   padding-left: 10px;
+  width: 100%;
 }
 .footer-groups .groups form input::placeholder {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--black);
-  padding-left: 10px;
 }
 .footer-groups .groups form input:nth-child(2) {
   padding: 10px 20px;
@@ -83,4 +83,27 @@ footer {
   font-size: 13px;
   font-weight: 700;
   color: var(--black);
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .footer-groups .footer-menu {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .footer-groups > h1 {
+    font-size: 18px;
+  }
+  .footer-groups .footer-menu .footer-links {
+    flex: 1 1 110px;
+  }
+  .footer-groups .footer-menu .footer-links ul a {
+    font-size: 13px;
+  }
+  .footer-groups .groups {
+    max-width: inherit;
+  }
+  .footer-groups .groups h1 {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
 }
