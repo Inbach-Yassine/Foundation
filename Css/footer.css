@@ -1,0 +1,86 @@
+footer {
+  margin: 3em 0 0 0;
+  background: var(--black);
+}
+.footer-groups {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2em 3em;
+}
+.footer-groups .footer-title {
+  font-family: "Courgette", cursive;
+}
+.footer-groups .footer-title > h1 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--Bg-color);
+}
+.footer-groups .footer-menu {
+  font-family: "Nunito Sans", sans-serif;
+}
+.footer-groups .footer-menu .footer-links > h2 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+}
+.footer-groups .footer-menu .footer-links > h2::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  background: var(--Bg-color);
+  width: 30px;
+  height: 4px;
+}
+.footer-groups .footer-menu .footer-links ul {
+  padding-top: 25px;
+}
+.footer-groups .footer-menu .footer-links ul a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  color: var(--Bg-color);
+}
+.footer-groups .groups {
+  font-family: "Nunito Sans", sans-serif;
+  max-width: 300px;
+}
+.footer-groups .groups h1 {
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  color: var(--Bg-color);
+}
+.footer-groups.groups form {
+  display: flex;
+  align-items: center;
+}
+.footer-groups .groups form input {
+  padding: 10px 0;
+}
+.footer-groups .groups form input[type="email"] {
+  color: var(--black);
+  font-weight: 400;
+  background: var(--white);
+  width: 60%;
+  padding-left: 10px;
+}
+.footer-groups .groups form input::placeholder {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  padding-left: 10px;
+}
+.footer-groups .groups form input:nth-child(2) {
+  padding: 10px 20px;
+  background: var(--white);
+  margin-right: 10px;
+}
+.footer-groups .groups form input[type="button"] {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--black);
+}
