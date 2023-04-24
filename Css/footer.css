@@ -86,15 +86,19 @@ footer {
   width: 100%;
 }
 @media only screen and (max-width: 600px) {
+  .footer-groups {
+    padding: 2em;
+  }
   .footer-groups .footer-menu {
     flex-wrap: wrap;
     gap: 1em;
+    justify-content: center;
   }
   .footer-groups > h1 {
     font-size: 18px;
   }
   .footer-groups .footer-menu .footer-links {
-    flex: 1 1 110px;
+    flex: 1 90px;
   }
   .footer-groups .footer-menu .footer-links ul a {
     font-size: 13px;
@@ -105,5 +109,8 @@ footer {
   .footer-groups .groups h1 {
     font-size: 20px;
     padding-bottom: 15px;
+  }
+  .footer-groups .groups form {
+    gap: 6px;
   }
 }
