@@ -90,11 +90,11 @@ header {
 }
 /***************************************************************media query***********************************************************/
 @media only screen and (max-width: 600px) {
-  .header {
-    padding: 0 1em;
+  header {
+    padding:1em 2em;
   }
   .navbar .logo > h1 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
   }
   #toggele {
@@ -132,4 +132,13 @@ header {
   .navbar .menu-bar.open {
     display: inherit;
   }
+}
+@media only screen and (min-width:600px) and (max-width:900px){
+  .navbar .logo > h1 {
+    font-size: 20px;
+    line-height: 20px;
+}
+.navbar .menu-bar .nav-links li > a {
+  font-size: 14px;
+}
 }
