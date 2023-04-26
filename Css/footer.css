@@ -77,7 +77,6 @@ footer {
 .footer-groups .groups form input:nth-child(2) {
   padding: 10px 20px;
   background: var(--white);
-  margin-right: 10px;
 }
 .footer-groups .groups form input[type="button"] {
   font-size: 13px;
@@ -111,6 +110,17 @@ footer {
     padding-bottom: 15px;
   }
   .footer-groups .groups form {
-    gap: 6px;
+    gap: 10px;
+  }
+  .footer-groups .groups form input {
+    padding: 8px 0;
+    border-radius: 10px;
+  }
+  .footer-groups .groups form input::placeholder {
+    font-size: 11px;
+  }
+  .footer-groups .groups form input:nth-child(2) {
+    padding: 8px 0px;
+    border-radius: 10px;
   }
 }
