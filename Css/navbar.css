@@ -1,3 +1,5 @@
+
+
 header {
   position: fixed;
   left: 0;
@@ -91,6 +93,9 @@ header {
 }
 /***************************************************************media query***********************************************************/
 @media only screen and (max-width: 600px) {
+  body{
+    overflow-y: hidden;
+  }
   header {
     padding: 1em 2em;
   }
