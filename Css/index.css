@@ -603,3 +603,109 @@ section:nth-of-type(7) {
     max-width: 200px;
   }
 }
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .inclusive-cares {
+    padding: 4em 3.5em 1em 3.5em;
+    text-align: center;
+  }
+  .inclusive-cares > h1 {
+    font-size: 30px;
+    max-width: max-content;
+  }
+  .inclusive-cares .content span {
+    width: 30%;
+  }
+  .know-about-us,
+  .what-we-do {
+    padding: 3em 0;
+  }
+  .know-about-us .about-us h1,
+  .what-we-do .content-what-we-do h1,
+  .container-project > h1,
+  .speed-your-donations .speed-your-donations-group h1 {
+    font-size: 25px;
+    line-height: 32px;
+    width: 400px;
+    padding-bottom: 15px;
+  }
+  .know-about-us .about-us p,
+  .what-we-do .content-what-we-do p,
+  .speed-your-donations .speed-your-donations-group p {
+    font-size: 14px;
+    max-width: 400px;
+    padding-bottom: 15px;
+  }
+  .know-about-us img {
+    width: 250px;
+  }
+  .our-supporters .groups-img {
+    padding: 1em 0;
+    gap: 1em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+  }
+  .what-we-do .content-what-we-do .container-box .box {
+    max-width: 350px;
+  }
+  .what-we-do .content-what-we-do .container-box .box .para p {
+    font-size: 14px;
+  }
+  .what-we-do > img {
+    width: 285px;
+  }
+  .container-project {
+    padding: 3em 0 0 0;
+  }
+  .content-what-we-do h1,
+  .container-project > h1 {
+    width: 600px;
+  }
+  .container-img .group {
+    width: 260px;
+    height: 300px;
+  }
+  .container-img .group .group-content h4 {
+    font-size: 18px;
+  }
+  .container-img .group .group-content p {
+    font-size: 13px;
+  }
+  .container-img .group .group-content .btn button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  .speed-your-donations {
+    padding: 2em 0;
+  }
+  .speed-your-donations .img h3 {
+    top: 89px;
+    left: 55px;
+    font-size: 16px;
+  }
+  .speed-your-donations img {
+    width: 200px;
+  }
+  section:nth-of-type(7) {
+    padding: 2em;
+  }
+  .contribute-to-provide h1 {
+    font-size: 23px;
+    padding-bottom: 20px;
+  }
+  .contribute-to-provide .button {
+    flex-direction: initial;
+    gap: 0 1em;
+  }
+  .cards {
+    gap: 0 2em;
+  }
+  .cards .card {
+    padding: 1em;
+    min-width: 60%;
+  }
+  .cards .card .card-content p:nth-child(2) {
+    font-size: 16px;
+    max-width: 200px;
+  }
+}
