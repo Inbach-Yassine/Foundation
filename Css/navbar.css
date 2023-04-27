@@ -134,6 +134,9 @@ header {
   }
 }
 @media only screen and (min-width:600px) and (max-width:900px){
+  header{
+    padding: 1em 2em;
+  }
   .navbar .logo > h1 {
     font-size: 20px;
     line-height: 20px;
