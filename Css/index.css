@@ -661,6 +661,10 @@ section:nth-of-type(7) {
   .container-project > h1 {
     width: 600px;
   }
+  .container-img {
+    justify-content: start;
+    gap: 1em;
+  }
   .container-img .group {
     width: 260px;
     height: 300px;
