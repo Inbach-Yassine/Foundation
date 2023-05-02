@@ -1,0 +1,227 @@
+@import "./navbar.css";
+@import "./footer.css";
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:wght@300;400;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --Primary-color: #096a56;
+  --Active-color: #205053;
+  --Bg-color: #e8ebf0;
+  --Text-color: #374151;
+  --Title-color: #22495f;
+  --Bg-color-alt: #e7f2f7;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+*::selection {
+  background: var(--black);
+  color: var(--white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section:nth-of-type(1) {
+  margin: 5em 0 0 0;
+  background: var(--Bg-color);
+}
+
+.about-us .group-1 {
+  max-width: 520px;
+}
+
+.about-us {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 5em 4em 8em 4em;
+}
+
+.content-about {
+  display: flex;
+  align-items: baseline;
+  column-gap: 13px;
+  padding-bottom: 2em;
+  font-weight: 700;
+}
+
+.content-about span {
+  background: var(--Title-color);
+  width: 5%;
+  height: 3px;
+}
+
+.content-about p {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--Title-color);
+}
+
+.about-us h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  color: var(--Title-color);
+}
+
+.about-us .group-2 {
+  max-width: 420px;
+}
+
+.about-us .group-2 p {
+  line-height: 25px;
+}
+
+.about-us .group-2 p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--Title-color);
+  padding-bottom: 15px;
+}
+
+.about-us .group-2 p:nth-child(2) {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--Text-color);
+}
+
+.image {
+  position: relative;
+  bottom: 65px;
+  display: flex;
+  justify-content: center;
+  padding: 0 5em;
+}
+
+.image img {
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
+}
+
+.container-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 4em;
+  font-family: "Nunito Sans", sans-serif;
+  padding-bottom: 3em;
+}
+
+.container-box .box {
+  max-width: 450px;
+}
+
+.container-box .box h2:nth-child(1) {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--Title-color);
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
+}
+
+.container-box .box h2:nth-child(2) {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--Title-color);
+  letter-spacing: 0.05em;
+  padding-bottom: 10px;
+}
+
+.container-box .box p {
+  font-size: 14px;
+  font-family: 400;
+  color: var(--Text-color);
+  line-height: 23px;
+  max-width: 420px;
+}
+
+section:nth-of-type(3),
+section:nth-of-type(4) {
+  padding: 0 3.5em;
+}
+
+.our-supporters {
+  padding: 1.5em 0;
+}
+
+.our-supporters > h2 {
+  font-size: 25px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  color: var(--Title-color);
+  text-transform: capitalize;
+  padding-bottom: 1em;
+  border-bottom: 2px solid var(--white);
+}
+
+.our-supporters .groups-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 0 0 0;
+}
+
+.awards-recognitions {
+  padding: 3em 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.awards-recognitions h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--Title-color);
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.awards-recognitions .groups-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 0 0 0;
+}
+
+.awards-recognitions .groups-img .box {
+  text-align: center;
+  width: 450px;
+}
+
+.awards-recognitions .groups-img .box img {
+  width: 70px;
+}
+
+.awards-recognitions .groups-img .box .content {
+  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.awards-recognitions .groups-img .box .content h4 {
+  font-weight: 700;
+  color: #1d2130;
+  padding-bottom: 4px;
+}
+
+.awards-recognitions .groups-img .box .content p:nth-child(2) {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1d2130;
+  padding-bottom: 4px;
+}
+
+.awards-recognitions .groups-img .box .content p:nth-child(3) {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--Text-color);
+}
