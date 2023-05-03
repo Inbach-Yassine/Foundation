@@ -354,3 +354,190 @@ section:nth-of-type(5) {
 footer {
   margin: 0;
 }
+
+/**************************************************************media query**************************************************************/
+@media screen and (max-width:320px) {
+  section:nth-of-type(1) {
+    margin: 4em 0 0 0;
+  }
+
+  .about-us {
+    padding: 3em 1em 6em 1em;
+    flex-direction: column;
+    gap: 1em 0;
+  }
+
+  .about-us .group-1,
+  .about-us .group-2 {
+    max-width: max-content;
+  }
+
+  .content-about {
+    padding-bottom: 1em;
+  }
+
+  .content-about span {
+    width: 17%;
+  }
+
+  .content-about p {
+    font-size: 19px;
+  }
+
+  .about-us h1 {
+    font-size: 21px;
+    letter-spacing: 0em;
+  }
+
+  .about-us .group-2 p {
+    line-height: 21px;
+  }
+
+  .about-us .group-2 p:nth-child(1) {
+    font-size: 16px;
+    padding-bottom: 11px;
+  }
+
+  .about-us .group-2 p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .image img {
+    width: 250px;
+    height: 120px;
+  }
+
+  .container-box {
+    gap: 2em 0;
+    padding-bottom: 1em;
+    flex-direction: column;
+    padding: 0 1em 2em;
+  }
+
+  .container-box .box h2:nth-child(2) {
+    font-size: 18px;
+    letter-spacing: 0;
+    padding-bottom: 10px;
+  }
+
+  .container-box .box p {
+    font-size: 12px;
+    line-height: 17px;
+    max-width: max-content;
+  }
+
+  .our-supporters>h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  section:nth-of-type(3),
+  section:nth-of-type(4) {
+    padding: 0 1em;
+  }
+
+  .our-supporters .groups-img {
+    padding: 1em 0 0 0;
+    gap: 0 1.5em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+  }
+
+  .our-supporters .groups-img img {
+    width: 110px;
+  }
+
+  .awards-recognitions {
+    padding: 2em 0;
+  }
+
+  .awards-recognitions h1,
+  .meet-our-team h1 {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+  }
+
+  .awards-recognitions .groups-img {
+    padding: 1em 0 0 0;
+    gap: 1em 0;
+    flex-wrap: wrap;
+  }
+
+  .awards-recognitions .groups-img .box {
+    flex: 1 1 100px;
+  }
+
+  .awards-recognitions .groups-img .box .content p:nth-child(2) {
+    font-size: 13px;
+    padding-bottom: 0px;
+  }
+
+  .awards-recognitions .groups-img .box .content p:nth-child(3) {
+    font-size: 11px;
+  }
+
+  section:nth-of-type(5) {
+    padding: 2em 1em;
+  }
+
+  .our-journey {
+    column-gap: 0;
+    padding: 2em;
+    gap: 1em 0;
+    flex-direction: column;
+  }
+
+  .our-journey .groups h3 {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
+  .our-journey .groups h1 {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+
+  .our-journey .groups .groups-content {
+    gap: 1em 2em;
+    flex-wrap: wrap;
+  }
+
+  .our-journey .groups .groups-content .content {
+    flex: 1 1 100px;
+    max-width: max-content;
+  }
+
+  .our-journey img {
+    width: 100%;
+  }
+
+  .meet-our-team p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Text-color);
+  }
+
+  .meet-our-team .groups-images {
+    flex-wrap: nowrap;
+    gap: 0 3em;
+    padding-top: 2em;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+  }
+
+  .meet-our-team .groups-images .images img {
+    width: 150px;
+  }
+
+  .meet-our-team .groups-images .images .para h2 {
+    font-size: 14px;
+    letter-spacing: 0;
+    padding-bottom: 3px;
+  }
+
+  .meet-our-team .groups-images .images .para h3 {
+    font-size: 11px;
+  }
+}

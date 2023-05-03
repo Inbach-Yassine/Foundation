@@ -439,7 +439,7 @@ section:nth-of-type(7) {
   border-radius: 20px;
 }
 /*******************************************************************media query***************************************************/
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   section:nth-of-type(2),
   section:nth-of-type(4),
   section:nth-of-type(5),
@@ -603,7 +603,7 @@ section:nth-of-type(7) {
     max-width: 200px;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
   .inclusive-cares {
     padding: 4em 3.5em 1em 3.5em;
     text-align: center;
