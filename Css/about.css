@@ -155,7 +155,7 @@ section:nth-of-type(4) {
   padding: 1.5em 0;
 }
 
-.our-supporters > h2 {
+.our-supporters>h2 {
   font-size: 25px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
@@ -177,7 +177,8 @@ section:nth-of-type(4) {
   font-family: "Nunito Sans", sans-serif;
 }
 
-.awards-recognitions h1 {
+.awards-recognitions h1,
+.meet-our-team h1 {
   font-size: 30px;
   font-weight: 700;
   color: var(--Title-color);
@@ -224,4 +225,132 @@ section:nth-of-type(4) {
   font-size: 13px;
   font-weight: 500;
   color: var(--Text-color);
+}
+
+section:nth-of-type(5) {
+  padding: 4em 3em 3em 3em;
+}
+
+.our-journey {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3em;
+  font-family: "Nunito Sans", sans-serif;
+  background: var(--white);
+  padding: 3em 1em;
+  border-radius: 12px;
+}
+
+.our-journey .groups {
+  max-width: 500px;
+}
+
+.our-journey .groups h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--Title-color);
+  letter-spacing: 2px;
+  padding-bottom: 7px;
+}
+
+.our-journey .groups h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--Title-color);
+  letter-spacing: 0.09em;
+  padding-bottom: 10px;
+}
+
+.our-journey .groups p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--Text-color);
+}
+
+.our-journey .groups .groups-content {
+  display: flex;
+  align-items: center;
+  column-gap: 3em;
+  padding-top: 1em;
+}
+
+.our-journey .groups .groups-content .content {
+  max-width: 250px;
+  text-align: start;
+}
+
+.our-journey .groups .groups-content .content p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--Title-color);
+  letter-spacing: 2px;
+}
+
+.our-journey .groups .groups-content .content p:nth-child(2) {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: var(--Active-color);
+}
+
+.our-journey img {
+  width: 450px;
+}
+
+.meet-our-team {
+  padding-top: 3em;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.meet-our-team p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--Text-color);
+}
+
+.meet-our-team .groups-images {
+  display: flex;
+  align-items: center;
+}
+
+.meet-our-team .groups-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3em 2em;
+  padding-top: 3em;
+}
+
+.meet-our-team .groups-images .images {
+  max-width: 300px;
+}
+
+.meet-our-team .groups-images .images img {
+  width: 250px;
+  object-fit: cover;
+  padding-bottom: 10px;
+}
+
+.meet-our-team .groups-images .images .para {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.meet-our-team .groups-images .images .para h2 {
+  font-size: 17px;
+  color: #1d2130;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+}
+
+.meet-our-team .groups-images .images .para h3 {
+  font-size: 13px;
+  color: var(--Text-color);
+}
+
+footer {
+  margin: 0;
 }
