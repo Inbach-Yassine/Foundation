@@ -7,12 +7,14 @@ header {
   background-color: var(--Bg-color);
   padding: 1em 4em;
 }
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.navbar .logo > h1 {
+
+.navbar .logo>h1 {
   font-size: 24px;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
@@ -21,16 +23,19 @@ header {
   line-height: 28px;
   text-transform: capitalize;
 }
-.navbar .logo > h1 span {
+
+.navbar .logo>h1 span {
   color: #dc8b42;
 }
+
 .navbar .menu-bar .nav-links {
   display: flex;
   align-items: center;
   column-gap: 2em;
   font-family: "Nunito Sans", sans-serif;
 }
-.navbar .menu-bar .nav-links li > a {
+
+.navbar .menu-bar .nav-links li>a {
   position: relative;
   font-size: 16px;
   font-weight: 400;
@@ -38,7 +43,8 @@ header {
   text-transform: capitalize;
   letter-spacing: 0.04em;
 }
-.navbar .menu-bar .nav-links li > a::after {
+
+.navbar .menu-bar .nav-links li>a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -48,12 +54,15 @@ header {
   bottom: -5px;
   transition: 0.2s ease-in;
 }
-.navbar .menu-bar .nav-links li > a:hover:after {
+
+.navbar .menu-bar .nav-links li>a:hover:after {
   width: 100%;
 }
-.navbar .menu-bar .nav-links li > a:hover {
+
+.navbar .menu-bar .nav-links li>a:hover {
   color: var(--Active-color);
 }
+
 .btn button {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
@@ -64,14 +73,17 @@ header {
   cursor: pointer;
   border-radius: 10px;
 }
+
 .btn button:hover {
   background: var(--Active-color);
 }
+
 #toggele {
   display: none;
   align-items: center;
   justify-content: center;
 }
+
 #toggele::before {
   content: "";
   position: absolute;
@@ -81,6 +93,7 @@ header {
   box-shadow: 0 12px var(--black);
   background: var(--black);
 }
+
 #toggele::after {
   content: "";
   position: absolute;
@@ -89,18 +102,22 @@ header {
   transform: translateY(12px);
   background: var(--black);
 }
+
 /***************************************************************media query***********************************************************/
 @media only screen and (max-width: 600px) {
   header {
     padding: 1em 2em;
   }
-  .navbar .logo > h1 {
+
+  .navbar .logo>h1 {
     font-size: 18px;
     line-height: 22px;
   }
+
   #toggele {
     display: inherit;
   }
+
   #toggele.open::before {
     transform: translateY(0) rotate(45deg);
     box-shadow: 0 0;
@@ -109,9 +126,11 @@ header {
   #toggele.open::after {
     transform: translateY(0) rotate(-45deg);
   }
+
   .navbar .btn {
     display: none;
   }
+
   .navbar .menu-bar {
     position: fixed;
     top: 0;
@@ -124,25 +143,84 @@ header {
     width: 100%;
     background: var(--Bg-color);
   }
+
   .navbar .menu-bar .nav-links {
     display: block;
   }
+
   .navbar .menu-bar .nav-links li {
     padding-bottom: 2em;
   }
+
   .navbar .menu-bar.open {
     display: inherit;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .navbar .logo>h1 {
+    font-size: 21px;
+    line-height: 22px;
+  }
+
+  #toggele {
+    display: inherit;
+  }
+
+  #toggele.open::before {
+    transform: translateY(0) rotate(45deg);
+    box-shadow: 0 0;
+  }
+
+  #toggele.open::after {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  .navbar .btn {
+    display: none;
+  }
+
+  .navbar .menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: var(--Bg-color);
+  }
+
+  .navbar .menu-bar .nav-links {
+    display: block;
+  }
+
+  .navbar .menu-bar .nav-links li {
+    padding-bottom: 2em;
+  }
+
+  .navbar .menu-bar .nav-links li>a {
+    font-size: 20px;
+  }
+
+  .navbar .menu-bar.open {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
   header {
     padding: 1em 2em;
   }
-  .navbar .logo > h1 {
+
+  .navbar .logo>h1 {
     font-size: 20px;
     line-height: 20px;
   }
-  .navbar .menu-bar .nav-links li > a {
+
+  .navbar .menu-bar .nav-links li>a {
     font-size: 14px;
   }
 }
