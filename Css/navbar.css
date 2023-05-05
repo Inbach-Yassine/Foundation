@@ -157,7 +157,7 @@ header {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 767px) {
   .navbar .logo>h1 {
     font-size: 21px;
     line-height: 22px;
@@ -210,7 +210,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1000px) {
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
   header {
     padding: 1em 2em;
   }
