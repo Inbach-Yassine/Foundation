@@ -4,5 +4,4 @@ var Toggele = document.getElementById("toggele");
 Toggele.addEventListener("click", () => {
   Menu.classList.toggle("open");
   Toggele.classList.toggle("open");
-  document.body.style.overflowY= "hidden";
 });

@@ -438,7 +438,118 @@ section:nth-of-type(7) {
   height: 43px;
   border-radius: 20px;
 }
-/*******************************************************************media query***************************************************/
+/***************************************************media query*********************************************************************/
+@media screen and (max-width:320px){
+  section:nth-of-type(1) {
+    margin: 4em 0 0 0;
+}
+.inclusive-cares {
+  padding: 3em 1em 1em 1em;
+}
+.inclusive-cares > h1 {
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+  padding-bottom: 20px;
+  max-width: max-content;
+}
+.btn button {
+  padding: 8px 10px;
+  font-size: 13px;
+}
+.inclusive-cares .content {
+  padding: 2em 0;
+  flex-direction: column;
+  gap: 1em 0;
+}
+.inclusive-cares .content > p {
+  font-size: 15px;
+  letter-spacing: 0;
+}
+.inclusive-cares .content span {
+  width: 40%;
+}
+section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(5), section:nth-of-type(6), section:nth-child(9) {
+  padding: 0 1em;
+}
+.know-about-us, .what-we-do {
+  flex-direction: column;
+  gap: 1.2em 0;
+  padding: 2em 0;
+}
+.know-about-us .about-us, .what-we-do .content-what-we-do, .container-project, .speed-your-donations .speed-your-donations-group {
+  max-width: max-content;
+}
+.know-about-us .about-us .content-about, .what-we-do .content-what-we-do .content-about, .container-project .content-about, .our-events .content-about {
+  padding-bottom: 0px;
+}
+.know-about-us .about-us h1, .what-we-do .content-what-we-do h1, .container-project > h1, .speed-your-donations .speed-your-donations-group h1 {
+  font-size: 21px;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+.know-about-us .about-us p, .what-we-do .content-what-we-do p, .speed-your-donations .speed-your-donations-group p {
+  font-size: 13px;
+  max-width: max-content;
+  padding-bottom: 10px;
+}
+.know-about-us img {
+  width: 100%;
+}
+section:nth-of-type(3) {
+  padding: 2em 1em;
+}
+.our-supporters > h2 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.our-supporters .groups-img {
+  padding: 1em 0 0 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 2em;
+  scroll-snap-type: x mandatory;
+}
+.our-supporters .groups-img img{
+  width: 100px;
+}
+.know-about-us .about-us .content-about > p, .what-we-do .content-what-we-do .content-about p, .container-project .content-about p, .our-events .content-about p {
+  font-size: 16px;
+}
+.what-we-do .content-what-we-do > img {
+  display: inherit;
+  width: 100%;
+}
+.what-we-do .content-what-we-do .container-box {
+  padding-top: 1em;
+}
+.what-we-do .content-what-we-do .container-box .box {
+  max-width: max-content;
+}
+.what-we-do .content-what-we-do .container-box .box img {
+  width: 25px;
+}
+.what-we-do .content-what-we-do .container-box .box .para h5 {
+  font-size: 13px;
+  padding-bottom: 3px;
+  letter-spacing: 0;
+}
+.what-we-do .content-what-we-do .container-box .box .para p {
+  font-size: 12px;
+  line-height: 17px;
+}
+.what-we-do  img{
+  display: none;
+}
+.container-project {
+  padding: 2em 0 0 0;
+}
+.container-project > h1{
+  padding-top: 13px;
+}
+}
+/*******************************************************************media query
 @media screen and (max-width: 600px) {
   section:nth-of-type(2),
   section:nth-of-type(4),
@@ -713,3 +824,4 @@ section:nth-of-type(7) {
     max-width: 200px;
   }
 }
+***************************************************/
