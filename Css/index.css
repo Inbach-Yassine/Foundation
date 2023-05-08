@@ -191,6 +191,9 @@ section:nth-of-type(3) {
 .container-project {
   padding: 5em 0 0 0;
 }
+section:nth-of-type(5){
+  padding-bottom: 4em;
+}
 .container-img {
   display: flex;
   align-items: center;
@@ -539,14 +542,103 @@ section:nth-of-type(3) {
   font-size: 12px;
   line-height: 17px;
 }
-.what-we-do  img{
+.what-we-do > img{
   display: none;
+}
+section:nth-of-type(5){
+  padding-bottom: 2em;
 }
 .container-project {
   padding: 2em 0 0 0;
 }
 .container-project > h1{
   padding-top: 13px;
+}
+.container-img {
+  gap: 1em 0em;
+}
+.container-img .group img {
+  object-fit: cover;
+}
+.container-img .group {
+  width: 300px;
+  height: 200px;
+}
+.container-img .group .group-content h4 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.container-img .group .group-content p {
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 10px;
+}
+.container-img .group .group-content .btn button {
+  padding: 6px 9px;
+  font-size: 13px;
+}
+.speed-your-donations {
+  padding: 2em 0;
+  flex-direction: column;
+  gap: 1em 0;
+}
+.speed-your-donations .speed-your-donations-group .groups {
+  padding-top: 1em;
+}
+.speed-your-donations .speed-your-donations-group .groups .para > span {
+  width: 12px;
+  height: 12px;
+}
+.speed-your-donations .speed-your-donations-group .groups .para p {
+  font-size: 13px;
+}
+.speed-your-donations .img h3 {
+  top: 65px;
+  left: 38px;
+  font-size: 13px;
+}
+.speed-your-donations .img .img-chart img{
+  width: 150px;
+}
+section:nth-of-type(7){
+  padding: 0;
+}
+.bg-img {
+  display: none;
+}
+.our-events {
+  padding: 1em 0 1em 0;
+}
+.our-events .content-about span {
+  width: 45%;
+}
+.cards {
+  overflow-x: unset;
+  flex-wrap: wrap;
+}
+.cards .card {
+  padding: 1em;
+}
+.cards .card .date h2 {
+  font-size: 20px;
+}
+.cards .card .date p {
+  font-size: 11px;
+}
+.cards .card .card-content p:first-child {
+  font-size: 11px;
+  padding-bottom: 2px;
+}
+.cards .card .card-content p:nth-child(2) {
+  font-size: 15px;
+  max-width: max-content;
+}
+.cards .card i {
+  width: 55px;
+  height: 30px;
+}
+.fa-lg {
+  font-size: 1em;
 }
 }
 /*******************************************************************media query
