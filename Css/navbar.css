@@ -104,7 +104,77 @@ header {
 }
 
 /***************************************************************media query***********************************************************/
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
+  header {
+    padding: 1em 2em 1em 1em;
+  }
+
+  .navbar .logo>h1 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  #toggele {
+    display: inherit;
+  }
+
+  #toggele.open::before {
+    transform: translateY(0) rotate(45deg);
+    box-shadow: 0 0;
+  }
+
+  #toggele.open::after {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  .navbar .btn {
+    display: none;
+  }
+
+  .navbar .menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: var(--Bg-color);
+  }
+
+  .navbar .menu-bar .nav-links {
+    display: block;
+  }
+
+  .navbar .menu-bar .nav-links li {
+    padding-bottom: 1.5em;
+  }
+
+  .navbar .menu-bar .nav-links li>a {
+    font-size: 15px;
+  }
+
+  #toggele::before {
+    width: 22px;
+    height: 4px;
+    transform: translateY(-10px);
+    box-shadow: 0 10px var(--black);
+  }
+
+  #toggele::after {
+    width: 22px;
+    height: 4px;
+    transform: translateY(10px);
+  }
+
+  .navbar .menu-bar.open {
+    display: inherit;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
   header {
     padding: 1em 2em;
   }
