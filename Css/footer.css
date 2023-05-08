@@ -95,6 +95,7 @@ footer {
   }
   .footer-groups > h1 {
     font-size: 18px;
+    line-height: 25px;
   }
   .footer-groups .footer-menu .footer-links {
     flex: 1 90px;
