@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:wght@300;400;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
 @import "./navbar.css";
 @import "./footer.css";
+
 :root {
   --Primary-color: #096a56;
   --Active-color: #205053;
@@ -12,26 +13,32 @@
   --black: #000000;
   --white: #ffffff;
 }
+
 *::selection {
   background: var(--black);
   color: var(--white);
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
 }
+
 section:nth-of-type(1) {
   background-repeat: round;
   margin: 5em 0 0 0;
 }
+
 .inclusive-cares {
   padding: 6em 4.5em 1em 4.5em;
 }
-.inclusive-cares > h1 {
+
+.inclusive-cares>h1 {
   font-size: 35px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 900;
@@ -41,33 +48,39 @@ section:nth-of-type(1) {
   max-width: 450px;
   color: var(--white);
 }
+
 .inclusive-cares .btn button {
   background: var(--Bg-color);
   color: var(--Text-color);
   border-radius: 0;
 }
+
 .inclusive-cares .btn button:hover {
   background: var(--Active-color);
   color: var(--white);
 }
+
 .inclusive-cares .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5em 0 3em 0;
 }
-.inclusive-cares .content > p {
+
+.inclusive-cares .content>p {
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--Bg-color);
 }
+
 .inclusive-cares .content span {
   width: 45%;
   height: 2px;
   background: var(--Bg-color-alt);
 }
+
 section:nth-of-type(2),
 section:nth-of-type(4),
 section:nth-of-type(5),
@@ -76,6 +89,7 @@ section:nth-child(9) {
   padding: 0 3.5em;
   background: var(--Bg-color);
 }
+
 .know-about-us,
 .what-we-do {
   display: flex;
@@ -83,9 +97,11 @@ section:nth-child(9) {
   justify-content: space-between;
   padding: 4em 0;
 }
-.what-we-do .content-what-we-do > img {
+
+.what-we-do .content-what-we-do>img {
   display: none;
 }
+
 .know-about-us .about-us,
 .what-we-do .content-what-we-do,
 .container-project,
@@ -93,6 +109,7 @@ section:nth-child(9) {
   max-width: 600px;
   font-family: "Nunito Sans", sans-serif;
 }
+
 .know-about-us .about-us .content-about,
 .what-we-do .content-what-we-do .content-about,
 .container-project .content-about,
@@ -102,6 +119,7 @@ section:nth-child(9) {
   column-gap: 13px;
   padding-bottom: 15px;
 }
+
 .know-about-us .about-us .content-about span,
 .what-we-do .content-what-we-do .content-about span,
 .container-project .content-about span,
@@ -110,7 +128,8 @@ section:nth-child(9) {
   width: 10%;
   height: 3px;
 }
-.know-about-us .about-us .content-about > p,
+
+.know-about-us .about-us .content-about>p,
 .what-we-do .content-what-we-do .content-about p,
 .container-project .content-about p,
 .our-events .content-about p {
@@ -118,9 +137,10 @@ section:nth-child(9) {
   font-weight: 700;
   color: var(--Title-color);
 }
+
 .know-about-us .about-us h1,
 .what-we-do .content-what-we-do h1,
-.container-project > h1,
+.container-project>h1,
 .speed-your-donations .speed-your-donations-group h1 {
   font-size: 33px;
   font-weight: 700;
@@ -129,6 +149,7 @@ section:nth-child(9) {
   line-height: 35px;
   padding-bottom: 20px;
 }
+
 .know-about-us .about-us p,
 .what-we-do .content-what-we-do p,
 .speed-your-donations .speed-your-donations-group p {
@@ -138,17 +159,21 @@ section:nth-child(9) {
   max-width: 570px;
   padding-bottom: 20px;
 }
+
 .know-about-us .about-us .btn button {
   border-radius: 0;
 }
+
 .know-about-us img {
   width: 300px;
   object-fit: cover;
 }
+
 section:nth-of-type(3) {
   padding: 2em 4.5em;
 }
-.our-supporters > h2 {
+
+.our-supporters>h2 {
   font-size: 25px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
@@ -157,24 +182,29 @@ section:nth-of-type(3) {
   padding-bottom: 1em;
   border-bottom: 2px solid var(--Bg-color-alt);
 }
+
 .our-supporters .groups-img {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2em 0 0 0;
 }
+
 .what-we-do .content-what-we-do .container-box .box {
   display: flex;
   align-items: start;
   column-gap: 15px;
   max-width: 400px;
 }
+
 .what-we-do .content-what-we-do .container-box .box img {
   width: 35px;
 }
+
 .what-we-do .content-what-we-do .container-box .box .para {
   font-family: "Roboto", sans-serif;
 }
+
 .what-we-do .content-what-we-do .container-box .box .para h5 {
   font-size: 15px;
   font-weight: 700;
@@ -182,18 +212,22 @@ section:nth-of-type(3) {
   padding-bottom: 7px;
   letter-spacing: 0.02em;
 }
+
 .what-we-do .content-what-we-do .container-box .box .para p {
   font-size: 15px;
   font-weight: 400;
   color: var(--Text-color);
   line-height: 23px;
 }
+
 .container-project {
   padding: 5em 0 0 0;
 }
-section:nth-of-type(5){
+
+section:nth-of-type(5) {
   padding-bottom: 4em;
 }
+
 .container-img {
   display: flex;
   align-items: center;
@@ -202,6 +236,7 @@ section:nth-of-type(5){
   padding: 1em 0 0 0;
   flex-wrap: wrap;
 }
+
 .container-img .group {
   position: relative;
   width: 300px;
@@ -209,6 +244,7 @@ section:nth-of-type(5){
   display: flex;
   align-items: flex-end;
 }
+
 .container-img .group::before {
   content: "";
   position: absolute;
@@ -217,9 +253,11 @@ section:nth-of-type(5){
   transition: 0.5s all;
   opacity: 0;
 }
+
 .container-img .group:hover:before {
   opacity: 1;
 }
+
 .container-img .group img {
   width: 100%;
   height: 100%;
@@ -229,6 +267,7 @@ section:nth-of-type(5){
   object-fit: cover;
   border-radius: 10px;
 }
+
 .container-img .group .group-content {
   position: relative;
   opacity: 0;
@@ -237,20 +276,24 @@ section:nth-of-type(5){
   color: var(--white);
   padding: 20px 0 20px 20px;
 }
+
 .container-img .group:hover .group-content {
   opacity: 1;
 }
+
 .container-img .group .group-content h4 {
   font-size: 21px;
   font-weight: 700;
   padding-bottom: 15px;
 }
+
 .container-img .group .group-content p {
   font-size: 14px;
   font-weight: 400;
   line-height: 23px;
   padding-bottom: 15px;
 }
+
 .container-img .group .group-content .btn button {
   padding: 10px 15px;
   background: var(--Bg-color-alt);
@@ -258,18 +301,21 @@ section:nth-of-type(5){
   font-size: 15px;
   border-radius: 0;
 }
+
 .speed-your-donations {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 4em 0 3em 0;
 }
+
 .speed-your-donations .speed-your-donations-group .groups {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   column-gap: 1em;
 }
+
 .speed-your-donations .speed-your-donations-group .groups .para {
   display: flex;
   align-items: baseline;
@@ -277,48 +323,40 @@ section:nth-of-type(5){
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
+
 .speed-your-donations .speed-your-donations-group .groups .para p {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--white);
 }
-.speed-your-donations .speed-your-donations-group .groups .para > span {
+
+.speed-your-donations .speed-your-donations-group .groups .para>span {
   width: 14px;
   height: 14px;
   background: #bef3c0;
 }
-.speed-your-donations
-  .speed-your-donations-group
-  .groups
-  .para:nth-child(2)
-  > span {
+
+.speed-your-donations .speed-your-donations-group .groups .para:nth-child(2)>span {
   background: #ac94f1;
 }
-.speed-your-donations
-  .speed-your-donations-group
-  .groups
-  .para:nth-child(3)
-  > span {
+
+.speed-your-donations .speed-your-donations-group .groups .para:nth-child(3)>span {
   background: #fff0ca;
 }
-.speed-your-donations
-  .speed-your-donations-group
-  .groups
-  .para:nth-child(4)
-  > span {
+
+.speed-your-donations .speed-your-donations-group .groups .para:nth-child(4)>span {
   background: #f9cf64;
 }
-.speed-your-donations
-  .speed-your-donations-group
-  .groups
-  .para:nth-child(5)
-  > span {
+
+.speed-your-donations .speed-your-donations-group .groups .para:nth-child(5)>span {
   background: #f38fbf;
 }
+
 .speed-your-donations .img {
   position: relative;
   font-family: "Courgette", cursive;
 }
+
 .speed-your-donations .img h3 {
   position: absolute;
   top: 112px;
@@ -326,15 +364,18 @@ section:nth-of-type(5){
   font-weight: 400;
   color: var(--white);
 }
+
 section:nth-of-type(7) {
   padding: 3em 4em;
 }
+
 .bg-img {
   height: 230px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: center;
 }
+
 .contribute-to-provide {
   display: flex;
   align-items: center;
@@ -344,18 +385,21 @@ section:nth-of-type(7) {
   text-align: center;
   height: 100%;
 }
+
 .contribute-to-provide h1 {
   font-size: 23px;
   font-weight: 700;
   padding-bottom: 25px;
   color: var(--white);
 }
+
 .contribute-to-provide .button {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em 0;
 }
+
 .contribute-to-provide .button button {
   padding: 10px 25px;
   font-size: 15px;
@@ -365,20 +409,25 @@ section:nth-of-type(7) {
   border: 1px solid var(--Primary-color);
   cursor: pointer;
 }
+
 .contribute-to-provide .button button:nth-child(1) {
   color: var(--white);
 }
+
 .contribute-to-provide .button button:nth-child(2) {
   background-color: var(--white);
   color: var(--Primary-color);
 }
+
 .our-events {
   padding: 2em 0 1em 0;
   font-family: "Nunito Sans", sans-serif;
 }
+
 .our-events .content-about span {
   width: 80%;
 }
+
 .cards {
   display: flex;
   align-items: center;
@@ -386,6 +435,7 @@ section:nth-of-type(7) {
   padding-bottom: 1em;
   overflow-x: scroll;
 }
+
 .cards .card {
   display: flex;
   align-items: center;
@@ -399,26 +449,32 @@ section:nth-of-type(7) {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   min-width: 40%;
 }
+
 .cards::-webkit-scrollbar {
   height: 5px;
   background: var(--white);
 }
+
 .cards::-webkit-scrollbar-thumb {
   background: var(--black);
 }
+
 .cards .card .date h2 {
   font-size: 30px;
   font-weight: 700;
   color: var(--Title-color);
 }
+
 .cards .card .date p {
   font-size: 13px;
   font-weight: 700;
   color: var(--Text-color);
 }
+
 .cards .card .card-content {
   text-align: start;
 }
+
 .cards .card .card-content p:first-child {
   font-size: 12px;
   font-weight: 600;
@@ -426,12 +482,14 @@ section:nth-of-type(7) {
   color: var(--Title-color);
   letter-spacing: 0.02em;
 }
+
 .cards .card .card-content p:nth-child(2) {
   font-size: 18px;
   font-weight: 700;
   color: var(--Title-color);
   max-width: 250px;
 }
+
 .cards .card i {
   display: flex;
   align-items: center;
@@ -441,206 +499,517 @@ section:nth-of-type(7) {
   height: 43px;
   border-radius: 20px;
 }
+
 /***************************************************media query*********************************************************************/
-@media screen and (max-width:320px){
+@media screen and (max-width: 320px) {
   section:nth-of-type(1) {
     margin: 4em 0 0 0;
+  }
+
+  .inclusive-cares {
+    padding: 3em 1em 1em 1em;
+  }
+
+  .inclusive-cares>h1 {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    padding-bottom: 20px;
+    max-width: max-content;
+  }
+
+  .btn button {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .inclusive-cares .content {
+    padding: 2em 0;
+    flex-direction: column;
+    gap: 1em 0;
+  }
+
+  .inclusive-cares .content>p {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+
+  .inclusive-cares .content span {
+    width: 40%;
+  }
+
+  section:nth-of-type(2),
+  section:nth-of-type(4),
+  section:nth-of-type(5),
+  section:nth-of-type(6),
+  section:nth-child(9) {
+    padding: 0 1em;
+  }
+
+  .know-about-us,
+  .what-we-do {
+    flex-direction: column;
+    gap: 1.2em 0;
+    padding: 2em 0;
+  }
+
+  .know-about-us .about-us,
+  .what-we-do .content-what-we-do,
+  .container-project,
+  .speed-your-donations .speed-your-donations-group {
+    max-width: max-content;
+  }
+
+  .know-about-us .about-us .content-about,
+  .what-we-do .content-what-we-do .content-about,
+  .container-project .content-about,
+  .our-events .content-about {
+    padding-bottom: 0px;
+  }
+
+  .know-about-us .about-us h1,
+  .what-we-do .content-what-we-do h1,
+  .container-project>h1,
+  .speed-your-donations .speed-your-donations-group h1 {
+    font-size: 21px;
+    letter-spacing: 0.02em;
+    line-height: 28px;
+    padding-bottom: 10px;
+  }
+
+  .know-about-us .about-us p,
+  .what-we-do .content-what-we-do p,
+  .speed-your-donations .speed-your-donations-group p {
+    font-size: 13px;
+    max-width: max-content;
+    padding-bottom: 10px;
+  }
+
+  .know-about-us img {
+    width: 100%;
+  }
+
+  section:nth-of-type(3) {
+    padding: 2em 1em;
+  }
+
+  .our-supporters>h2 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .our-supporters .groups-img {
+    padding: 1em 0 0 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 2em;
+    scroll-snap-type: x mandatory;
+  }
+
+  .our-supporters .groups-img img {
+    width: 100px;
+  }
+
+  .know-about-us .about-us .content-about>p,
+  .what-we-do .content-what-we-do .content-about p,
+  .container-project .content-about p,
+  .our-events .content-about p {
+    font-size: 16px;
+  }
+
+  .what-we-do .content-what-we-do>img {
+    display: inherit;
+    width: 100%;
+  }
+
+  .what-we-do .content-what-we-do .container-box {
+    padding-top: 1em;
+  }
+
+  .what-we-do .content-what-we-do .container-box .box {
+    max-width: max-content;
+  }
+
+  .what-we-do .content-what-we-do .container-box .box img {
+    width: 25px;
+  }
+
+  .what-we-do .content-what-we-do .container-box .box .para h5 {
+    font-size: 13px;
+    padding-bottom: 3px;
+    letter-spacing: 0;
+  }
+
+  .what-we-do .content-what-we-do .container-box .box .para p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .what-we-do>img {
+    display: none;
+  }
+
+  section:nth-of-type(5) {
+    padding-bottom: 2em;
+  }
+
+  .container-project {
+    padding: 2em 0 0 0;
+  }
+
+  .container-project>h1 {
+    padding-top: 13px;
+  }
+
+  .container-img {
+    gap: 1em 0em;
+  }
+
+  .container-img .group img {
+    object-fit: cover;
+  }
+
+  .container-img .group {
+    width: 300px;
+    height: 200px;
+  }
+
+  .container-img .group .group-content h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .container-img .group .group-content p {
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 10px;
+  }
+
+  .container-img .group .group-content .btn button {
+    padding: 6px 9px;
+    font-size: 13px;
+  }
+
+  .speed-your-donations {
+    padding: 2em 0;
+    flex-direction: column;
+    gap: 1em 0;
+  }
+
+  .speed-your-donations .speed-your-donations-group .groups {
+    padding-top: 1em;
+  }
+
+  .speed-your-donations .speed-your-donations-group .groups .para>span {
+    width: 12px;
+    height: 12px;
+  }
+
+  .speed-your-donations .speed-your-donations-group .groups .para p {
+    font-size: 13px;
+  }
+
+  .speed-your-donations .img h3 {
+    top: 65px;
+    left: 38px;
+    font-size: 13px;
+  }
+
+  .speed-your-donations .img .img-chart img {
+    width: 150px;
+  }
+
+  section:nth-of-type(7) {
+    padding: 0;
+  }
+
+  .bg-img {
+    display: none;
+  }
+
+  .our-events {
+    padding: 1em 0 1em 0;
+  }
+
+  .our-events .content-about span {
+    width: 45%;
+  }
+
+  .cards {
+    overflow-x: unset;
+    flex-wrap: wrap;
+  }
+
+  .cards .card {
+    padding: 1em;
+  }
+
+  .cards .card .date h2 {
+    font-size: 20px;
+  }
+
+  .cards .card .date p {
+    font-size: 11px;
+  }
+
+  .cards .card .card-content p:first-child {
+    font-size: 11px;
+    padding-bottom: 2px;
+  }
+
+  .cards .card .card-content p:nth-child(2) {
+    font-size: 15px;
+    max-width: max-content;
+  }
+
+  .cards .card i {
+    width: 55px;
+    height: 30px;
+  }
+
+  .fa-lg {
+    font-size: 1em;
+  }
 }
-.inclusive-cares {
-  padding: 3em 1em 1em 1em;
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  section:nth-of-type(1) {
+    margin: 4em 0 0 0;
+  }
+
+  .inclusive-cares {
+    padding: 3em 1em 1em 1em;
+  }
+
+  .inclusive-cares>h1 {
+    font-size: 27px;
+    letter-spacing: 0.04em;
+    line-height: 29px;
+    padding-bottom: 15px;
+    max-width: max-content;
+  }
+
+  .btn button {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  .inclusive-cares .content {
+    padding: 2em 0 2em 0;
+    flex-direction: column;
+    gap: 1em 0;
+  }
+
+  .inclusive-cares .content>p {
+    font-size: 14px;
+  }
+
+  .inclusive-cares .content span {
+    width: 30%;
+  }
+
+  section:nth-of-type(2),
+  section:nth-of-type(4),
+  section:nth-of-type(5),
+  section:nth-of-type(6),
+  section:nth-child(9) {
+    padding: 0 1em;
+  }
+
+  .know-about-us,
+  .what-we-do {
+    flex-direction: column;
+    padding: 2em 0;
+    gap: 1.3em 0;
+  }
+
+  .know-about-us .about-us,
+  .what-we-do .content-what-we-do,
+  .container-project,
+  .speed-your-donations .speed-your-donations-group {
+    max-width: max-content;
+  }
+
+  .know-about-us .about-us .content-about,
+  .what-we-do .content-what-we-do .content-about,
+  .container-project .content-about,
+  .our-events .content-about {
+    padding-bottom: 0px;
+  }
+
+  .know-about-us .about-us h1,
+  .what-we-do .content-what-we-do h1,
+  .container-project>h1,
+  .speed-your-donations .speed-your-donations-group h1 {
+    font-size: 23px;
+    letter-spacing: 0.03em;
+    line-height: 29px;
+    padding-bottom: 15px;
+  }
+
+  .know-about-us .about-us p,
+  .what-we-do .content-what-we-do p,
+  .speed-your-donations .speed-your-donations-group p {
+    font-size: 13px;
+    max-width: max-content;
+    padding-bottom: 15px;
+  }
+
+  .know-about-us img {
+    width: 100%;
+    object-fit: fill;
+    height: 250px;
+  }
+
+  section:nth-of-type(3) {
+    padding: 2em 1em;
+  }
+
+  .our-supporters>h2 {
+    font-size: 23px;
+    padding-bottom: 10px;
+  }
+
+  .our-supporters .groups-img {
+    gap: 0 2em;
+    padding: 1em 0 0 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+  }
+
+  .our-supporters .groups-img img {
+    width: 115px;
+  }
+
+  .what-we-do .content-what-we-do>img {
+    display: inherit;
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+  }
+
+  .what-we-do>img {
+    display: none;
+  }
+
+  .what-we-do .content-what-we-do .container-box {
+    padding-top: 1em;
+  }
+
+  .what-we-do .content-what-we-do .container-box .box {
+    max-width: max-content;
+  }
+
+  .what-we-do .content-what-we-do .container-box .box img {
+    width: 30px;
+  }
+
+  .what-we-do .content-what-we-do .container-box .box .para p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .bg-img {
+    display: none;
+  }
+
+  .container-project {
+    padding: 2em 0 0 0;
+  }
+
+  .container-project h1 {
+    padding-top: 10px;
+  }
+
+  .container-img {
+    gap: 1em 0;
+    padding: 1em 0 2em 0;
+  }
+
+  .container-img .group {
+    width: 300px;
+    height: 250px;
+  }
+
+  .container-img .group img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .container-img .group .group-content .btn button {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  .container-img .group .group-content {
+    padding: 20px 0 20px 15px;
+  }
+
+  .container-img .group .group-content h4 {
+    font-size: 19px;
+    padding-bottom: 10px;
+  }
+
+  .container-img .group .group-content p {
+    font-size: 13px;
+    line-height: 19px;
+    padding-bottom: 10px;
+  }
+
+  .container-img .group .group-content .btn button {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  .speed-your-donations {
+    padding: 2em 0 2em 0;
+    gap: 1.3em 0;
+    flex-direction: column;
+  }
+
+  .speed-your-donations .img .img-chart img {
+    width: 200px;
+  }
+
+  .speed-your-donations .img h3 {
+    top: 89px;
+    left: 52px;
+    font-size: 17px;
+  }
+
+  section:nth-of-type(7) {
+    padding: 0;
+  }
+
+  .our-events .content-about span {
+    width: 45%;
+  }
+
+  .cards {
+    flex-direction: column;
+    overflow-x: inherit;
+  }
+
+  .cards .card .date h2 {
+    font-size: 25px;
+  }
+
+  .cards .card .card-content p:first-child {
+    padding-bottom: 4px;
+  }
+
+  .cards .card .card-content p:nth-child(2) {
+    font-size: 16px;
+    max-width: max-content;
+  }
+
+  .fa-lg {
+    font-size: 1em;
+  }
 }
-.inclusive-cares > h1 {
-  font-size: 18px;
-  letter-spacing: 0.02em;
-  line-height: 24px;
-  padding-bottom: 20px;
-  max-width: max-content;
-}
-.btn button {
-  padding: 8px 10px;
-  font-size: 13px;
-}
-.inclusive-cares .content {
-  padding: 2em 0;
-  flex-direction: column;
-  gap: 1em 0;
-}
-.inclusive-cares .content > p {
-  font-size: 15px;
-  letter-spacing: 0;
-}
-.inclusive-cares .content span {
-  width: 40%;
-}
-section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(5), section:nth-of-type(6), section:nth-child(9) {
-  padding: 0 1em;
-}
-.know-about-us, .what-we-do {
-  flex-direction: column;
-  gap: 1.2em 0;
-  padding: 2em 0;
-}
-.know-about-us .about-us, .what-we-do .content-what-we-do, .container-project, .speed-your-donations .speed-your-donations-group {
-  max-width: max-content;
-}
-.know-about-us .about-us .content-about, .what-we-do .content-what-we-do .content-about, .container-project .content-about, .our-events .content-about {
-  padding-bottom: 0px;
-}
-.know-about-us .about-us h1, .what-we-do .content-what-we-do h1, .container-project > h1, .speed-your-donations .speed-your-donations-group h1 {
-  font-size: 21px;
-  letter-spacing: 0.02em;
-  line-height: 28px;
-  padding-bottom: 10px;
-}
-.know-about-us .about-us p, .what-we-do .content-what-we-do p, .speed-your-donations .speed-your-donations-group p {
-  font-size: 13px;
-  max-width: max-content;
-  padding-bottom: 10px;
-}
-.know-about-us img {
-  width: 100%;
-}
-section:nth-of-type(3) {
-  padding: 2em 1em;
-}
-.our-supporters > h2 {
-  font-size: 18px;
-  padding-bottom: 10px;
-}
-.our-supporters .groups-img {
-  padding: 1em 0 0 0;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  gap: 2em;
-  scroll-snap-type: x mandatory;
-}
-.our-supporters .groups-img img{
-  width: 100px;
-}
-.know-about-us .about-us .content-about > p, .what-we-do .content-what-we-do .content-about p, .container-project .content-about p, .our-events .content-about p {
-  font-size: 16px;
-}
-.what-we-do .content-what-we-do > img {
-  display: inherit;
-  width: 100%;
-}
-.what-we-do .content-what-we-do .container-box {
-  padding-top: 1em;
-}
-.what-we-do .content-what-we-do .container-box .box {
-  max-width: max-content;
-}
-.what-we-do .content-what-we-do .container-box .box img {
-  width: 25px;
-}
-.what-we-do .content-what-we-do .container-box .box .para h5 {
-  font-size: 13px;
-  padding-bottom: 3px;
-  letter-spacing: 0;
-}
-.what-we-do .content-what-we-do .container-box .box .para p {
-  font-size: 12px;
-  line-height: 17px;
-}
-.what-we-do > img{
-  display: none;
-}
-section:nth-of-type(5){
-  padding-bottom: 2em;
-}
-.container-project {
-  padding: 2em 0 0 0;
-}
-.container-project > h1{
-  padding-top: 13px;
-}
-.container-img {
-  gap: 1em 0em;
-}
-.container-img .group img {
-  object-fit: cover;
-}
-.container-img .group {
-  width: 300px;
-  height: 200px;
-}
-.container-img .group .group-content h4 {
-  font-size: 18px;
-  padding-bottom: 10px;
-}
-.container-img .group .group-content p {
-  font-size: 12px;
-  line-height: 16px;
-  padding-bottom: 10px;
-}
-.container-img .group .group-content .btn button {
-  padding: 6px 9px;
-  font-size: 13px;
-}
-.speed-your-donations {
-  padding: 2em 0;
-  flex-direction: column;
-  gap: 1em 0;
-}
-.speed-your-donations .speed-your-donations-group .groups {
-  padding-top: 1em;
-}
-.speed-your-donations .speed-your-donations-group .groups .para > span {
-  width: 12px;
-  height: 12px;
-}
-.speed-your-donations .speed-your-donations-group .groups .para p {
-  font-size: 13px;
-}
-.speed-your-donations .img h3 {
-  top: 65px;
-  left: 38px;
-  font-size: 13px;
-}
-.speed-your-donations .img .img-chart img{
-  width: 150px;
-}
-section:nth-of-type(7){
-  padding: 0;
-}
-.bg-img {
-  display: none;
-}
-.our-events {
-  padding: 1em 0 1em 0;
-}
-.our-events .content-about span {
-  width: 45%;
-}
-.cards {
-  overflow-x: unset;
-  flex-wrap: wrap;
-}
-.cards .card {
-  padding: 1em;
-}
-.cards .card .date h2 {
-  font-size: 20px;
-}
-.cards .card .date p {
-  font-size: 11px;
-}
-.cards .card .card-content p:first-child {
-  font-size: 11px;
-  padding-bottom: 2px;
-}
-.cards .card .card-content p:nth-child(2) {
-  font-size: 15px;
-  max-width: max-content;
-}
-.cards .card i {
-  width: 55px;
-  height: 30px;
-}
-.fa-lg {
-  font-size: 1em;
-}
-}
+
 /*******************************************************************media query
 @media screen and (max-width: 600px) {
   section:nth-of-type(2),
