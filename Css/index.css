@@ -38,7 +38,7 @@ section:nth-of-type(1) {
   padding: 6em 4.5em 1em 4.5em;
 }
 
-.inclusive-cares>h1 {
+.inclusive-cares > h1 {
   font-size: 35px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 900;
@@ -67,7 +67,7 @@ section:nth-of-type(1) {
   padding: 5em 0 3em 0;
 }
 
-.inclusive-cares .content>p {
+.inclusive-cares .content > p {
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
@@ -98,7 +98,7 @@ section:nth-child(9) {
   padding: 4em 0;
 }
 
-.what-we-do .content-what-we-do>img {
+.what-we-do .content-what-we-do > img {
   display: none;
 }
 
@@ -129,7 +129,7 @@ section:nth-child(9) {
   height: 3px;
 }
 
-.know-about-us .about-us .content-about>p,
+.know-about-us .about-us .content-about > p,
 .what-we-do .content-what-we-do .content-about p,
 .container-project .content-about p,
 .our-events .content-about p {
@@ -140,7 +140,7 @@ section:nth-child(9) {
 
 .know-about-us .about-us h1,
 .what-we-do .content-what-we-do h1,
-.container-project>h1,
+.container-project > h1,
 .speed-your-donations .speed-your-donations-group h1 {
   font-size: 33px;
   font-weight: 700;
@@ -173,7 +173,7 @@ section:nth-of-type(3) {
   padding: 2em 4.5em;
 }
 
-.our-supporters>h2 {
+.our-supporters > h2 {
   font-size: 25px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
@@ -330,25 +330,41 @@ section:nth-of-type(5) {
   color: var(--white);
 }
 
-.speed-your-donations .speed-your-donations-group .groups .para>span {
+.speed-your-donations .speed-your-donations-group .groups .para > span {
   width: 14px;
   height: 14px;
   background: #bef3c0;
 }
 
-.speed-your-donations .speed-your-donations-group .groups .para:nth-child(2)>span {
+.speed-your-donations
+  .speed-your-donations-group
+  .groups
+  .para:nth-child(2)
+  > span {
   background: #ac94f1;
 }
 
-.speed-your-donations .speed-your-donations-group .groups .para:nth-child(3)>span {
+.speed-your-donations
+  .speed-your-donations-group
+  .groups
+  .para:nth-child(3)
+  > span {
   background: #fff0ca;
 }
 
-.speed-your-donations .speed-your-donations-group .groups .para:nth-child(4)>span {
+.speed-your-donations
+  .speed-your-donations-group
+  .groups
+  .para:nth-child(4)
+  > span {
   background: #f9cf64;
 }
 
-.speed-your-donations .speed-your-donations-group .groups .para:nth-child(5)>span {
+.speed-your-donations
+  .speed-your-donations-group
+  .groups
+  .para:nth-child(5)
+  > span {
   background: #f38fbf;
 }
 
@@ -510,7 +526,7 @@ section:nth-of-type(7) {
     padding: 3em 1em 1em 1em;
   }
 
-  .inclusive-cares>h1 {
+  .inclusive-cares > h1 {
     font-size: 18px;
     letter-spacing: 0.02em;
     line-height: 24px;
@@ -529,7 +545,7 @@ section:nth-of-type(7) {
     gap: 1em 0;
   }
 
-  .inclusive-cares .content>p {
+  .inclusive-cares .content > p {
     font-size: 15px;
     letter-spacing: 0;
   }
@@ -569,7 +585,7 @@ section:nth-of-type(7) {
 
   .know-about-us .about-us h1,
   .what-we-do .content-what-we-do h1,
-  .container-project>h1,
+  .container-project > h1,
   .speed-your-donations .speed-your-donations-group h1 {
     font-size: 21px;
     letter-spacing: 0.02em;
@@ -593,7 +609,7 @@ section:nth-of-type(7) {
     padding: 2em 1em;
   }
 
-  .our-supporters>h2 {
+  .our-supporters > h2 {
     font-size: 18px;
     padding-bottom: 10px;
   }
@@ -610,14 +626,14 @@ section:nth-of-type(7) {
     width: 100px;
   }
 
-  .know-about-us .about-us .content-about>p,
+  .know-about-us .about-us .content-about > p,
   .what-we-do .content-what-we-do .content-about p,
   .container-project .content-about p,
   .our-events .content-about p {
     font-size: 16px;
   }
 
-  .what-we-do .content-what-we-do>img {
+  .what-we-do .content-what-we-do > img {
     display: inherit;
     width: 100%;
   }
@@ -645,7 +661,7 @@ section:nth-of-type(7) {
     line-height: 17px;
   }
 
-  .what-we-do>img {
+  .what-we-do > img {
     display: none;
   }
 
@@ -657,7 +673,7 @@ section:nth-of-type(7) {
     padding: 2em 0 0 0;
   }
 
-  .container-project>h1 {
+  .container-project > h1 {
     padding-top: 13px;
   }
 
@@ -700,7 +716,7 @@ section:nth-of-type(7) {
     padding-top: 1em;
   }
 
-  .speed-your-donations .speed-your-donations-group .groups .para>span {
+  .speed-your-donations .speed-your-donations-group .groups .para > span {
     width: 12px;
     height: 12px;
   }
@@ -781,7 +797,7 @@ section:nth-of-type(7) {
     padding: 3em 1em 1em 1em;
   }
 
-  .inclusive-cares>h1 {
+  .inclusive-cares > h1 {
     font-size: 27px;
     letter-spacing: 0.04em;
     line-height: 29px;
@@ -800,7 +816,7 @@ section:nth-of-type(7) {
     gap: 1em 0;
   }
 
-  .inclusive-cares .content>p {
+  .inclusive-cares .content > p {
     font-size: 14px;
   }
 
@@ -839,7 +855,7 @@ section:nth-of-type(7) {
 
   .know-about-us .about-us h1,
   .what-we-do .content-what-we-do h1,
-  .container-project>h1,
+  .container-project > h1,
   .speed-your-donations .speed-your-donations-group h1 {
     font-size: 23px;
     letter-spacing: 0.03em;
@@ -865,7 +881,7 @@ section:nth-of-type(7) {
     padding: 2em 1em;
   }
 
-  .our-supporters>h2 {
+  .our-supporters > h2 {
     font-size: 23px;
     padding-bottom: 10px;
   }
@@ -882,14 +898,14 @@ section:nth-of-type(7) {
     width: 115px;
   }
 
-  .what-we-do .content-what-we-do>img {
+  .what-we-do .content-what-we-do > img {
     display: inherit;
     width: 100%;
     height: 300px;
     object-fit: fill;
   }
 
-  .what-we-do>img {
+  .what-we-do > img {
     display: none;
   }
 
@@ -1007,6 +1023,226 @@ section:nth-of-type(7) {
 
   .fa-lg {
     font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  section:nth-of-type(1) {
+    margin: 4em 0 0 0;
+  }
+
+  .inclusive-cares {
+    padding: 5em 1em 1em 1em;
+  }
+
+  .inclusive-cares > h1 {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    line-height: 36px;
+    padding-bottom: 25px;
+    max-width: max-content;
+  }
+
+  .inclusive-cares .content {
+    padding: 2em 0;
+  }
+
+  .inclusive-cares .content > p {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+
+  .inclusive-cares .content span {
+    width: 35%;
+  }
+
+  section:nth-of-type(2),
+  section:nth-of-type(4),
+  section:nth-of-type(5),
+  section:nth-of-type(6),
+  section:nth-child(9) {
+    padding: 0 1em;
+  }
+
+  .know-about-us,
+  .what-we-do {
+    padding: 2em 0;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .know-about-us .about-us,
+  .what-we-do .content-what-we-do,
+  .container-project,
+  .speed-your-donations .speed-your-donations-group {
+    max-width: max-content;
+    flex: 1 330px;
+  }
+
+  .know-about-us .about-us .content-about,
+  .what-we-do .content-what-we-do .content-about,
+  .container-project .content-about,
+  .our-events .content-about {
+    padding-bottom: 0;
+  }
+
+  .know-about-us .about-us h1,
+  .what-we-do .content-what-we-do h1,
+  .container-project > h1,
+  .speed-your-donations .speed-your-donations-group h1 {
+    font-size: 27px;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    padding-bottom: 15px;
+  }
+
+  .know-about-us .about-us p,
+  .what-we-do .content-what-we-do p,
+  .speed-your-donations .speed-your-donations-group p {
+    font-size: 15px;
+    max-width: max-content;
+    padding-bottom: 15px;
+  }
+
+  .know-about-us img,
+  .what-we-do > img {
+    width: 250px;
+    object-fit: fill;
+  }
+
+  section:nth-of-type(3) {
+    padding: 2em 1em;
+  }
+
+  .our-supporters > h2 {
+    font-size: 24px;
+    padding-bottom: 13px;
+  }
+
+  .our-supporters .groups-img {
+    gap: 0 2em;
+    padding: 1em 0 0 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+  }
+
+  .our-supporters .groups-img img {
+    width: 120px;
+  }
+
+  .what-we-do .content-what-we-do .container-box .box {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: max-content;
+  }
+
+  .container-project {
+    padding: 2em 0 0 0;
+  }
+
+  .container-project > h1 {
+    padding-top: 1em;
+  }
+
+  .container-img {
+    gap: 2em;
+    padding: 1em 0 2em 0;
+  }
+
+  .container-img .group {
+    width: 280px;
+    height: 300px;
+    flex: 1 1 250px;
+  }
+
+  .container-img .group img {
+    object-fit: fill;
+  }
+
+  .container-img .group .group-content {
+    padding: 0 0 20px 10px;
+  }
+
+  .container-img .group .group-content h4 {
+    font-size: 19px;
+  }
+
+  .container-img .group .group-content p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .container-img .group .group-content .btn button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .speed-your-donations {
+    padding: 3em 0;
+    gap: 1.2em 1em;
+    flex-wrap: wrap;
+  }
+
+  .speed-your-donations .img .img-chart img {
+    width: 200px;
+  }
+
+  .speed-your-donations .img h3 {
+    top: 89px;
+    left: 54px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 660px),
+  not ((min-width: 630px) and (max-width:767px)) {
+  .know-about-us img,
+  .what-we-do .content-what-we-do > img {
+    display: inherit;
+    width: 100%;
+    height: 330px;
+  }
+
+  .what-we-do > img {
+    display: none;
+  }
+
+  .what-we-do .content-what-we-do .container-box {
+    padding-top: 1em;
+  }
+
+  .speed-your-donations {
+    justify-content: center;
+  }
+
+  .speed-your-donations .img h3 {
+    top: 135px;
+    left: 90px;
+    font-size: 21px;
+  }
+
+  .speed-your-donations .img .img-chart img {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 581px),
+  not ((min-width: 581px) and (max-width:767px)) {
+  .inclusive-cares .content {
+    padding: 2em 0;
+    flex-direction: column;
+    gap: 1em 0;
+  }
+
+  .inclusive-cares .content span {
+    width: 20%;
+  }
+
+  .inclusive-cares .content > p {
+    font-size: 16px;
+    letter-spacing: 0;
   }
 }
 
