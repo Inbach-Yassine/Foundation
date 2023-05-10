@@ -1250,6 +1250,7 @@ section:nth-of-type(7) {
 
   .cards .card .card-content p:nth-child(2) {
     font-size: 15px;
+    max-width: 230px;
   }
 
   .cards .card i {
@@ -1259,6 +1260,81 @@ section:nth-of-type(7) {
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 581px),
+  (not (min-width: 581px) and (max-width:767px)) {
+  .inclusive-cares .content {
+    padding: 2em 0;
+    flex-direction: column;
+    gap: 1em 0;
+  }
+
+  .inclusive-cares .content span {
+    width: 20%;
+  }
+
+  .inclusive-cares .content > p {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .contribute-to-provide {
+    height: 70%;
+  }
+
+  .contribute-to-provide h1 {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 660px),
+  (not (min-width: 660px) and (max-width:767px)) {
+  .know-about-us img,
+  .what-we-do .content-what-we-do > img {
+    display: inherit;
+    width: 100%;
+    height: 330px;
+  }
+
+  .what-we-do > img {
+    display: none;
+  }
+
+  .what-we-do .content-what-we-do .container-box {
+    padding-top: 1em;
+  }
+
+  .speed-your-donations {
+    justify-content: center;
+  }
+
+  .speed-your-donations .img h3 {
+    top: 135px;
+    left: 90px;
+    font-size: 21px;
+  }
+
+  .speed-your-donations .img .img-chart img {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 690px),
+  (not (min-width: 690px) and (max-width:767px)) {
+  .cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cards .card {
+    justify-content: space-around;
+    padding: 1em;
+    flex: 1 1 270px;
+  }
+}
+
+/*******************************************************************media query
 @media screen and (min-width: 480px) and (max-width: 690px),
   not ((min-width: 690px) and (max-width:767px)) {
   .cards {
@@ -1274,7 +1350,7 @@ section:nth-of-type(7) {
 }
 
 @media screen and (min-width: 480px) and (max-width: 660px),
-  not ((min-width: 630px) and (max-width:767px)) {
+  not ((min-width: 660px) and (max-width:767px)) {
   .know-about-us img,
   .what-we-do .content-what-we-do > img {
     display: inherit;
@@ -1333,7 +1409,37 @@ section:nth-of-type(7) {
   }
 }
 
-/*******************************************************************media query
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 600px) {
   section:nth-of-type(2),
   section:nth-of-type(4),
