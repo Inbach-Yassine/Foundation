@@ -65,8 +65,12 @@ section:nth-of-type(1) {
     height: 2px;
     background: var(--Title-color);
 }
-
-.what-we-do .content .content-about p,
+.what-we-do .content .content-about p{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--Title-color);
+    text-transform: capitalize;
+}
 .container-project .content-project p,
 .our-events .content-about p {
     font-size: 23px;

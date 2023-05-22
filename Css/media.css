@@ -59,12 +59,11 @@ section:nth-of-type(1) {
 }
 
 .container-top-news .top-news .content-top-news p {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
-  color: #1d2130;
-  letter-spacing: 2px;
+  color:var(--Title-color);
   padding-bottom: 15px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .container-top-news .top-news h1 {

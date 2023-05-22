@@ -2,9 +2,11 @@ footer {
   margin: 2em 0 0 0;
   background: var(--black);
 }
+
 .footer-groups {
   padding: 2em 3em;
 }
+
 .footer-groups > h1 {
   font-size: 20px;
   font-family: "Courgette", cursive;
@@ -14,18 +16,21 @@ footer {
   color: var(--Bg-color);
   padding-bottom: 1em;
 }
+
 .footer-groups .footer-menu {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   font-family: "Nunito Sans", sans-serif;
 }
+
 .footer-groups .footer-menu .footer-links > h2 {
   position: relative;
   font-size: 18px;
   font-weight: 700;
   color: var(--white);
 }
+
 .footer-groups .footer-menu .footer-links > h2::before {
   content: "";
   position: absolute;
@@ -34,33 +39,40 @@ footer {
   width: 30px;
   height: 4px;
 }
+
 .footer-groups .footer-menu .footer-links ul {
   padding-top: 25px;
 }
+
 .footer-groups .footer-menu .footer-links ul a {
   font-size: 14px;
   font-weight: 500;
   line-height: 25px;
   color: var(--Bg-color);
 }
+
 .footer-groups .groups {
   font-family: "Nunito Sans", sans-serif;
   max-width: 300px;
 }
+
 .footer-groups .groups h1 {
   font-size: 25px;
   font-weight: 700;
   padding-bottom: 10px;
   color: var(--Bg-color);
 }
+
 .footer-groups .groups form {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
+
 .footer-groups .groups form input {
   padding: 10px 0;
 }
+
 .footer-groups .groups form input[type="email"] {
   color: var(--black);
   font-weight: 400;
@@ -68,58 +80,89 @@ footer {
   padding-left: 10px;
   width: 100%;
 }
+
 .footer-groups .groups form input::placeholder {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--black);
 }
+
 .footer-groups .groups form input:nth-child(2) {
   padding: 10px 20px;
   background: var(--white);
 }
+
 .footer-groups .groups form input[type="button"] {
   font-size: 13px;
   font-weight: 700;
   color: var(--black);
   width: 100%;
 }
+
+.made-with {
+  text-align: center;
+  padding: 12px 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.made-with p {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--Text-color);
+}
+
+.made-with p span {
+  font-weight: 700;
+  color: var(--Title-color);
+}
+
 @media only screen and (max-width: 767px) {
   .footer-groups {
     padding: 2em;
   }
+
   .footer-groups .footer-menu {
     flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
   }
+
   .footer-groups > h1 {
     font-size: 18px;
     line-height: 25px;
   }
+
   .footer-groups .footer-menu .footer-links {
     flex: 1 90px;
   }
+
   .footer-groups .footer-menu .footer-links ul a {
     font-size: 13px;
   }
+
   .footer-groups .groups {
     max-width: inherit;
   }
+
   .footer-groups .groups h1 {
     font-size: 20px;
     padding-bottom: 15px;
   }
+
   .footer-groups .groups form {
     gap: 10px;
   }
+
   .footer-groups .groups form input {
     padding: 8px 0;
     border-radius: 10px;
   }
+
   .footer-groups .groups form input::placeholder {
     font-size: 11px;
   }
+
   .footer-groups .groups form input:nth-child(2) {
     padding: 8px 0px;
     border-radius: 10px;
