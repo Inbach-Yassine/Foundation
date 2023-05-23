@@ -472,3 +472,127 @@ section:nth-of-type(4) {
     font-size: 13px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .what-we-do {
+    gap: 1em 0;
+    padding: 7em 1em 2em 1em;
+    flex-direction: column;
+  }
+  .what-we-do .content .content-about,
+  .container-project .content-project,
+  .our-events .content-about {
+    padding-bottom: 10px;
+  }
+  .what-we-do .content,
+  .container-box .box .box-img-content .box-img .box-content {
+    max-width: max-content;
+  }
+  .what-we-do .content h1 {
+    font-size: 27px;
+
+    letter-spacing: 0.04em;
+    padding-bottom: 10px;
+  }
+  .what-we-do .content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .what-we-do > img {
+    width: 100%;
+    height: 200px;
+  }
+  section:nth-of-type(2) {
+    padding: 2em 1em;
+  }
+  .container-box .box h2 {
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
+  .container-box .box .box-img-content {
+    gap: 1em;
+    padding: 2em 0 0 0;
+  }
+  .container-box .box .box-img-content .box-img img {
+    width: 25px;
+  }
+  .container-box .box .box-img-content .box-img .box-content h2 {
+    font-size: 17px;
+    padding-bottom: 0;
+  }
+  .container-box .box .box-img-content .box-img .box-content p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  section:nth-of-type(3) {
+    padding: 2em 1em;
+  }
+  .container-project .content-project span {
+    width: 10%;
+  }
+  .container-project > h1 {
+    font-size: 23px;
+    letter-spacing: 0.02em;
+    padding-bottom: 11px;
+  }
+  .container-img .group img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .container-img .group {
+    width: 300px;
+    height: 250px;
+  }
+  .container-img .group .group-content {
+    padding: 20px 0 20px 15px;
+  }
+  .container-img .group .group-content h4 {
+    font-size: 19px;
+    padding-bottom: 10px;
+  }
+  .container-img .group .group-content p {
+    font-size: 13px;
+    line-height: 19px;
+    padding-bottom: 10px;
+  }
+  .container-img .group .group-content .btn button {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+  section:nth-of-type(4) {
+    padding: 1em 1em;
+  }
+  .our-events .content-about span {
+    width: 50%;
+  }
+  .cards {
+    gap: 1em 0;
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    flex: 1 1 300px;
+    justify-content: space-between;
+  }
+  .cards .card .date h2 {
+    font-size: 25px;
+  }
+  .cards .card .date p {
+    font-size: 13px;
+  }
+  .cards .card .card-content p:first-child {
+    padding-bottom: 4px;
+  }
+  .cards .card .card-content p:nth-child(2) {
+    font-size: 16px;
+    max-width: max-content;
+  }
+  .cards .card i {
+    width: 35px;
+    height: 35px;
+    font-size: 1em;
+  }
+  .made-with p {
+    font-size: 15px;
+  }
+}
