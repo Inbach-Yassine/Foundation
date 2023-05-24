@@ -1,8 +1,7 @@
-@import "./navbar.css";
-@import "./footer.css";
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:wght@300;400;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
-
+@import "./navbar.css";
+@import "./footer.css";
 :root {
   --Primary-color: #096a56;
   --Active-color: #205053;
