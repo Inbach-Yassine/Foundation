@@ -472,127 +472,325 @@ section:nth-of-type(4) {
     font-size: 13px;
   }
 }
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .what-we-do {
     gap: 1em 0;
     padding: 7em 1em 2em 1em;
     flex-direction: column;
   }
+
   .what-we-do .content .content-about,
   .container-project .content-project,
   .our-events .content-about {
     padding-bottom: 10px;
   }
+
   .what-we-do .content,
   .container-box .box .box-img-content .box-img .box-content {
     max-width: max-content;
   }
+
   .what-we-do .content h1 {
     font-size: 27px;
 
     letter-spacing: 0.04em;
     padding-bottom: 10px;
   }
+
   .what-we-do .content p {
     font-size: 14px;
     line-height: 20px;
   }
+
   .what-we-do > img {
     width: 100%;
     height: 200px;
   }
+
   section:nth-of-type(2) {
     padding: 2em 1em;
   }
+
   .container-box .box h2 {
     font-size: 23px;
     line-height: 28px;
     letter-spacing: 0.03em;
   }
+
   .container-box .box .box-img-content {
     gap: 1em;
     padding: 2em 0 0 0;
   }
+
   .container-box .box .box-img-content .box-img img {
     width: 25px;
   }
+
   .container-box .box .box-img-content .box-img .box-content h2 {
     font-size: 17px;
     padding-bottom: 0;
   }
+
   .container-box .box .box-img-content .box-img .box-content p {
     font-size: 13px;
     line-height: 16px;
   }
+
   section:nth-of-type(3) {
     padding: 2em 1em;
   }
+
   .container-project .content-project span {
     width: 10%;
   }
+
   .container-project > h1 {
     font-size: 23px;
     letter-spacing: 0.02em;
     padding-bottom: 11px;
   }
+
   .container-img .group img {
     width: 100%;
     height: 100%;
     object-fit: fill;
   }
+
   .container-img .group {
     width: 300px;
     height: 250px;
   }
+
   .container-img .group .group-content {
     padding: 20px 0 20px 15px;
   }
+
   .container-img .group .group-content h4 {
     font-size: 19px;
     padding-bottom: 10px;
   }
+
   .container-img .group .group-content p {
     font-size: 13px;
     line-height: 19px;
     padding-bottom: 10px;
   }
+
   .container-img .group .group-content .btn button {
     padding: 7px 12px;
     font-size: 13px;
   }
+
   section:nth-of-type(4) {
     padding: 1em 1em;
   }
+
   .our-events .content-about span {
     width: 50%;
   }
+
   .cards {
     gap: 1em 0;
     flex-wrap: wrap;
   }
+
   .cards .card {
     flex: 1 1 300px;
     justify-content: space-between;
   }
+
   .cards .card .date h2 {
     font-size: 25px;
   }
+
   .cards .card .date p {
     font-size: 13px;
   }
+
   .cards .card .card-content p:first-child {
     padding-bottom: 4px;
   }
+
   .cards .card .card-content p:nth-child(2) {
     font-size: 16px;
     max-width: max-content;
   }
+
   .cards .card i {
     width: 35px;
     height: 35px;
     font-size: 1em;
   }
+
   .made-with p {
     font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .what-we-do {
+    padding: 7em 1em 2em;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .what-we-do > img {
+    width: 43%;
+  }
+
+  .what-we-do .content {
+    max-width: 500px;
+    flex: 1 1 300px;
+  }
+
+  .what-we-do .content h1 {
+    font-size: 26px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    padding-bottom: 10px;
+  }
+
+  .what-we-do .content p {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  section:nth-of-type(2),
+  section:nth-of-type(3),
+  section:nth-of-type(4) {
+    padding: 2em 1em;
+  }
+
+  .container-box .box h2 {
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    line-height: 27px;
+  }
+
+  .container-box .box .box-img-content {
+    gap: 1em;
+    padding: 2em 0 0 0;
+  }
+
+  .container-box .box .box-img-content .box-img {
+    gap: 0 10px;
+    flex: 1 1 250px;
+  }
+
+  .container-box .box .box-img-content .box-img .box-content h2 {
+    font-size: 16px;
+    padding-bottom: 0;
+  }
+
+  .container-box .box .box-img-content .box-img .box-content p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .what-we-do .content .content-about,
+  .container-project .content-project,
+  .our-events .content-about {
+    padding-bottom: 10px;
+  }
+
+  .container-project > h1 {
+    font-size: 23px;
+
+    padding-bottom: 0;
+    line-height: 26px;
+  }
+
+  .container-img .group {
+    width: 280px;
+    height: 300px;
+    flex: 1 1 250px;
+    align-items: flex-end;
+  }
+
+  .container-img .group img {
+    object-fit: fill;
+  }
+
+  .container-img .group .group-content {
+    padding: 0 0 20px 10px;
+  }
+
+  .container-img .group .group-content h4 {
+    font-size: 19px;
+  }
+
+  .container-img .group .group-content p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .container-img .group .group-content .btn button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .container-project .content-project p,
+  .our-events .content-about p {
+    font-size: 20px;
+  }
+
+  .our-events .content-about span {
+    width: 70%;
+  }
+
+  .cards {
+    gap: 1em 2em;
+    flex-wrap: wrap;
+  }
+
+  .cards .card {
+    padding: 1em;
+  }
+
+  .cards .card .date h2 {
+    font-size: 26px;
+  }
+
+  .cards .card .date p {
+    font-size: 12px;
+  }
+
+  .cards .card .card-content p:nth-child(2) {
+    font-size: 14px;
+    max-width: 270px;
+  }
+
+  .cards .card i {
+    width: 40px;
+    height: 40px;
+    font-size: 1em;
+  }
+
+  .made-with p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 590px),
+  (not (min-width: 590px) and (max-width:767px)) {
+  .what-we-do > img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .what-we-do .content,
+  .container-box .box .box-img-content .box-img .box-content {
+    max-width: max-content;
+    flex: inherit;
+  }
+
+  .container-img .group {
+    width: 250px;
+    height: 250px;
+  }
+
+  .cards .card {
+    flex: 1 1 270px;
   }
 }
