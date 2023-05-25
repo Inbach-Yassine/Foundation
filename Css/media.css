@@ -279,3 +279,108 @@ section:nth-of-type(2) {
     font-size: 13px;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  section:nth-of-type(1) {
+    margin: 4em 0 0 0;
+  }
+
+  .container-top-news {
+    padding: 2em 1em;
+    flex-direction: column;
+    gap: 1.2em 0;
+  }
+
+  .container-top-news .top-news .content-top-news p {
+    padding-bottom: 10px;
+  }
+
+  .container-top-news .top-news h1 {
+    font-size: 23px;
+    letter-spacing: 0.04em;
+    line-height: 29px;
+    padding-bottom: 10px;
+  }
+
+  .container-top-news .top-news p {
+    font-size: 14px;
+    padding-bottom: 12px;
+    line-height: 19px;
+    max-width: max-content;
+  }
+
+  .btn button {
+    padding: 7px 12px;
+    font-size: 13px;
+    border-radius: 0;
+  }
+
+  .container-top-news .groups .group,
+  .parent .children .group .content-paragraph {
+    max-width: max-content;
+  }
+
+  .container-top-news .groups .group>img {
+    width: 100px;
+  }
+
+  .container-top-news .groups .group .content h2 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .container-top-news .groups .group .content p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .container-top-news .groups .group .content p:nth-child(3) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  section:nth-of-type(2) {
+    padding: 2em 0 0;
+  }
+
+  .parent {
+    padding: 0 1em;
+  }
+
+  .parent .children {
+    justify-content: start;
+    gap: 1.2em 1em;
+  }
+
+  .parent .children .group .content-paragraph h2 {
+    font-size: 15px;
+  }
+
+  .parent .children .group .content-paragraph p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .made-with p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 395px),
+(not (min-width: 395px) and (max-width:480px)) {
+  .container-top-news .groups .group {
+    gap: 10px 0;
+    padding-bottom: 20px;
+    max-width: max-content;
+    flex-direction: column;
+  }
+
+  .container-top-news .groups .group>img {
+    width: 100%;
+    height: 120px;
+    object-fit: fill;
+  }
+
+  .container-top-news .groups .group .content {
+    text-align: center;
+  }
+}
