@@ -61,7 +61,7 @@ section:nth-of-type(1) {
 .container-top-news .top-news .content-top-news p {
   font-size: 20px;
   font-weight: 700;
-  color:var(--Title-color);
+  color: var(--Title-color);
   padding-bottom: 15px;
   text-transform: capitalize;
 }
@@ -127,7 +127,7 @@ section:nth-of-type(1) {
 }
 
 section:nth-of-type(2) {
-  padding: 3em 0 0 ;
+  padding: 3em 0 0;
 }
 
 .parent {
@@ -169,4 +169,113 @@ section:nth-of-type(2) {
   font-weight: 400;
   color: var(--Text-color);
   line-height: 19px;
+}
+
+/*******************************************************************media query***************************************************************/
+@media screen and (max-width: 320px) {
+  section:nth-of-type(1) {
+    margin: 4em 0 0 0;
+  }
+
+  .container-top-news {
+    padding: 2em 1em 2em 1em;
+    flex-direction: column;
+    gap: 1.2em 0;
+  }
+
+  .container-top-news .top-news {
+    max-width: max-content;
+  }
+
+  .container-top-news .top-news .content-top-news span {
+    width: 15%;
+  }
+
+  .container-top-news .top-news .content-top-news p {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  .container-top-news .top-news h1 {
+    font-size: 23px;
+    letter-spacing: 0.03em;
+    padding-bottom: 10px;
+    line-height: 30px;
+  }
+
+  .container-top-news .top-news p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    line-height: 18px;
+    max-width: max-content;
+  }
+
+  .btn button {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  .container-top-news .groups .group {
+    gap: 12px 0;
+    max-width: max-content;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .container-top-news .groups .group>img {
+    width: 100%;
+    object-fit: fill;
+    height: 110px;
+  }
+
+  .container-top-news .groups .group .content {
+    text-align: center;
+  }
+
+  .container-top-news .groups .group .content h2 {
+    font-size: 14px;
+  }
+
+  .container-top-news .groups .group .content p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .container-top-news .groups .group .content p:nth-child(3) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  section:nth-of-type(2) {
+    padding: 2em 0 0;
+  }
+
+  .parent {
+    padding: 0 1em;
+  }
+
+  .parent .children {
+    gap: 1.2em 0;
+  }
+
+  .parent .children .group .content-paragraph {
+    max-width: max-content;
+  }
+
+  .parent .children .group img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .parent .children .group .content-paragraph h2 {
+    font-size: 16px;
+  }
+
+  .parent .children .group .content-paragraph p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .made-with p {
+    font-size: 13px;
+  }
 }
