@@ -5,7 +5,7 @@ header {
   width: 100%;
   z-index: 999;
   background-color: var(--Bg-color);
-  padding: 1em 4em;
+  padding: 1em;
 }
 
 .navbar {
@@ -106,7 +106,7 @@ header {
 /***************************************************************media query***********************************************************/
 @media screen and (max-width: 320px) {
   header {
-    padding: 1em 2em 1em 1em;
+    padding: 1em 3em 1em 1em;
   }
 
   .navbar .logo>h1 {
@@ -176,7 +176,7 @@ header {
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
   header {
-    padding: 1em 2em;
+    padding: 1em 3em 1em 1em;
   }
 
   .navbar .logo>h1 {
@@ -271,7 +271,7 @@ header {
     padding-bottom: 2em;
   }
 
-  .navbar .menu-bar .nav-links li > a {
+  .navbar .menu-bar .nav-links li>a {
     font-size: 20px;
   }
 
@@ -282,7 +282,7 @@ header {
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
   header {
-    padding: 1em 2em;
+    padding: 1em;
   }
 
   .navbar .logo>h1 {
