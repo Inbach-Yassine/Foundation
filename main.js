@@ -8,11 +8,16 @@ Toggele.addEventListener("click", () => {
   Toggele.classList.toggle("open");
 });
 
-window.addEventListener("scroll" , () => {
-  if (window.pageYOffset > 300 ){
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 300) {
     BtnScroll.classList.add("active");
-  }
-  else{
+  } else {
     BtnScroll.classList.remove("active");
   }
-})
+  Scroll.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
