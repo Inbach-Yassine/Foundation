@@ -312,6 +312,24 @@ section:nth-of-type(4) {
   border-radius: 20px;
 }
 
+.btn-scroll-top {
+  position: fixed;
+  bottom: 200px;
+  right: 10px;
+  background: var(--Bg-color-alt);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1em;
+  font-size: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 /*****************************************************media query*********************************************************/
 @media screen and (max-width: 320px) {
   .what-we-do {
@@ -606,10 +624,11 @@ section:nth-of-type(4) {
   }
 
   .cards .card {
-    flex: 1 1 300px;
     justify-content: space-between;
+    padding: 1em;
   }
 
+  
   .cards .card .date h2 {
     font-size: 25px;
   }
@@ -619,12 +638,12 @@ section:nth-of-type(4) {
   }
 
   .cards .card .card-content p:first-child {
-    padding-bottom: 4px;
+    padding-bottom: 3px;
   }
 
   .cards .card .card-content p:nth-child(2) {
-    font-size: 16px;
-    max-width: max-content;
+    font-size: 15px;
+    max-width: 200px;
   }
 
   .cards .card i {
@@ -908,11 +927,21 @@ section:nth-of-type(4) {
   .container-box .box .box-img-content {
     gap: 1em 10px;
   }
-
+  
+  .cards .card .date h2 {
+    font-size: 21px;
+ }
   .container-box .box .box-img-content .box-img .box-content p {
     font-size: 12px;
     line-height: 15px;
   }
+  .cards .card .card-content p:first-child {
+    font-size: 12px;
+    padding-bottom: 3px;
+ }
+  .cards .card .card-content p:nth-child(2) {
+    font-size: 15px;
+ }
 
   .container-box .box .box-img-content .box-img {
     flex: 1 1 212px;

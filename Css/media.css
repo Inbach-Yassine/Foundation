@@ -171,6 +171,24 @@ section:nth-of-type(2) {
   line-height: 19px;
 }
 
+.btn-scroll-top {
+  position: fixed;
+  bottom: 200px;
+  right: 10px;
+  background: var(--Bg-color-alt);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1em;
+  font-size: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 /*******************************************************************media query***************************************************************/
 @media screen and (max-width: 320px) {
   section:nth-of-type(1) {
