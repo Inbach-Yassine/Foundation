@@ -1349,7 +1349,7 @@ section:nth-of-type(7) {
     margin: 4em 0 0 0;
   }
   .inclusive-cares {
-    padding: 4em 1em 1em 1em;
+    padding: 4em 2.5em 1em;
 }
   .inclusive-cares > h1 {
     font-size: 35px;
@@ -1366,7 +1366,7 @@ section:nth-of-type(7) {
   section:nth-of-type(5),
   section:nth-of-type(6),
   section:nth-child(9) {
-    padding: 0 1em;
+    padding: 0 2.5em;
     background: var(--Bg-color);
   }
 
@@ -1407,8 +1407,8 @@ section:nth-of-type(7) {
     object-fit: fill;
   }
 
-  section:nth-of-type(3) {
-    padding: 2em 1em;
+  section:nth-of-type(3),section:nth-of-type(7) {
+    padding: 2em 2.5em;
   }
 
   .what-we-do > img {
@@ -1437,9 +1437,7 @@ section:nth-of-type(7) {
     object-fit: fill;
   }
 
-  section:nth-of-type(7) {
-    padding: 2em 1em;
-  }
+   
 
   .contribute-to-provide .button {
     flex-direction: row;

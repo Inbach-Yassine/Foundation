@@ -229,7 +229,7 @@ header {
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
   header {
-    padding: 1em 2em 1em 1em;
+    padding: 1em 3em 1em 1em;
   }
 
   .navbar .logo>h1 {
@@ -282,11 +282,12 @@ header {
   .navbar .menu-bar.open {
     display: inherit;
   }
+ 
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
   header {
-    padding: 1em;
+    padding: 1em 2.5em;
   }
 
   .navbar .logo>h1 {
@@ -297,4 +298,8 @@ header {
   .navbar .menu-bar .nav-links li>a {
     font-size: 14px;
   }
+  .btn button {
+    padding: 9px 12px;
+    font-size: 14px;
+ }
 }
