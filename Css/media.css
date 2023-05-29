@@ -189,6 +189,12 @@ section:nth-of-type(2) {
   cursor: pointer;
 }
 
+.btn-scroll-top.active {
+  opacity: 1;
+  visibility: visible;
+  bottom: 40px;
+}
+
 /*******************************************************************media query***************************************************************/
 @media screen and (max-width: 320px) {
   section:nth-of-type(1) {
@@ -296,6 +302,10 @@ section:nth-of-type(2) {
   .made-with p {
     font-size: 13px;
   }
+
+  .btn-scroll-top.active {
+    bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -380,6 +390,10 @@ section:nth-of-type(2) {
 
   .made-with p {
     font-size: 15px;
+  }
+
+  .btn-scroll-top.active {
+    bottom: 30px;
   }
 }
 
@@ -492,6 +506,10 @@ section:nth-of-type(2) {
     font-size: 12px;
     line-height: 16px;
   }
+
+  .btn-scroll-top.active {
+    bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 595px),
@@ -597,5 +615,9 @@ section:nth-of-type(2) {
   .parent .children .group .content-paragraph p {
     font-size: 13px;
     line-height: 17px;
+  }
+
+  .btn-scroll-top.active {
+    bottom: 30px;
   }
 }

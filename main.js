@@ -9,7 +9,7 @@ Toggele.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll" , () => {
-  if (window.pageYOffset > 600 ){
+  if (window.pageYOffset > 300 ){
     BtnScroll.classList.add("active");
   }
   else{
