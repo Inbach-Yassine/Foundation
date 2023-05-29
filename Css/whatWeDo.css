@@ -329,6 +329,12 @@ section:nth-of-type(4) {
   transition: 0.5s;
   cursor: pointer;
 }
+.btn-scroll-top.active{
+  opacity: 1;
+  visibility: visible;
+  bottom: 40px;
+}
+
 
 /*****************************************************media query*********************************************************/
 @media screen and (max-width: 320px) {
@@ -498,6 +504,10 @@ section:nth-of-type(4) {
   .made-with p {
     font-size: 13px;
   }
+  .btn-scroll-top.active{
+    bottom: 30px;
+  }
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -655,6 +665,10 @@ section:nth-of-type(4) {
   .made-with p {
     font-size: 15px;
   }
+  .btn-scroll-top.active{
+    bottom: 30px;
+  }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -800,6 +814,10 @@ section:nth-of-type(4) {
   .made-with p {
     font-size: 16px;
   }
+  .btn-scroll-top.active{
+    bottom: 30px;
+  }
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 590px),
@@ -920,6 +938,10 @@ section:nth-of-type(4) {
   .cards .card {
     padding: 1em;
   }
+  .btn-scroll-top.active{
+    bottom: 30px;
+  }
+
 }
 
 @media screen and (min-width: 767px) and (max-width: 832px),
